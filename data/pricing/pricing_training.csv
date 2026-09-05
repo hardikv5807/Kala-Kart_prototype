@@ -1,0 +1,4 @@
+# KALA-KART PRICING MODEL TRAINING DATASET
+# STATUS: NOT READY FOR PRODUCTION — AWAITING LEGITIMATE EMPIRICAL FIELD DATA
+# WARNING: DO NOT POPULATE WITH FABRICATED MARKET OBSERVATIONS OR SYNTHETIC DATA
+id,category,subcategory,material,craft_technique,color,length_cm,width_cm,height_cm,diameter_cm,weight_g,quantity,handmade,production_time_hours,raw_material_cost_inr,labor_cost_inr,packaging_cost_inr,other_cost_inr,market_median_price_inr,market_min_price_inr,market_max_price_inr,market_sample_count,market_trend_score,market_observation_date,description_length,design_complexity_score,image_quality_score,target_selling_price_inr

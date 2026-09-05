@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Sparkles, ArrowRight } from "lucide-react";
 import { LanguageCode } from "../../types/artisan";
 import { playTextToSpeech } from "../../utils/speechUtils";
+import { KalaKartLogo } from "../common/KalaKartLogo";
 
 interface SplashScreenProps {
   language: LanguageCode;
@@ -55,12 +56,13 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ language, onFinish }
       <div className="flex flex-col items-center text-center z-10 my-auto">
         {/* Animated Brand Emblem */}
         <div className="relative mb-6">
-          <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl bg-gradient-to-tr from-[#EA580C] via-[#F97316] to-amber-400 p-0.5 shadow-2xl shadow-orange-950/60 animate-pulse">
-            <div className="w-full h-full bg-[#0F172A] rounded-[22px] flex items-center justify-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#EA580C]/20 to-transparent opacity-60" />
-              <div className="text-4xl sm:text-5xl transform hover:scale-110 transition-transform">
-                🪡
-              </div>
+          <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-3xl bg-gradient-to-tr from-[#EA580C] via-[#F97316] to-amber-400 p-1 shadow-2xl shadow-orange-950/60 animate-pulse">
+            <div className="w-full h-full bg-[#FAF6ED] rounded-[22px] flex items-center justify-center relative overflow-hidden p-1">
+              <KalaKartLogo
+                size="hero"
+                className="w-full h-full rounded-[20px]"
+                alt="Kala-Kart Official Logo"
+              />
             </div>
           </div>
 

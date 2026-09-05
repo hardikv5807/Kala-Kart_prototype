@@ -9,7 +9,11 @@
     "start": "node dist/server.cjs",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "train:pricing": "tsx scripts/train-pricing-model.ts",
+    "train:pricing:demo": "tsx scripts/train-pricing-model.ts --synthetic",
+    "test:pricing": "tsx scripts/test-pricing-pipeline.ts",
+    "test:market": "tsx scripts/test-market-ingestion.ts"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",

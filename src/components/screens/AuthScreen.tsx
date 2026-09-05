@@ -13,6 +13,7 @@ import {
 import { LanguageCode, ArtisanUser, SellerRole } from "../../types/artisan";
 import { DEFAULT_USER } from "../../data/sampleCrafts";
 import { TTSButton } from "../common/TTSButton";
+import { KalaKartLogo } from "../common/KalaKartLogo";
 import { playTextToSpeech, soundEffects } from "../../utils/speechUtils";
 
 interface AuthScreenProps {
@@ -95,9 +96,11 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
       {/* Top Header Bar */}
       <div className="flex items-center justify-between gap-2 pb-3 border-b border-stone-200">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-xl bg-[#EA580C] text-white flex items-center justify-center font-bold text-sm shadow-xs">
-            🪡
-          </div>
+          <KalaKartLogo
+            size="sm"
+            className="w-9 h-9 rounded-xl shadow-xs border border-stone-200 bg-[#FAF6ED] p-0.5"
+            alt="Kala-Kart Logo"
+          />
           <div>
             <h1 className="text-sm font-extrabold text-[#0F172A] tracking-tight">
               Kala-Kart
@@ -153,13 +156,15 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
         <div className="space-y-4">
           {/* Welcome Greeting Banner */}
           <div className="p-4 bg-gradient-to-r from-orange-500/10 via-amber-500/10 to-orange-500/5 rounded-2xl border border-orange-200/80">
-            <div className="flex items-start gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#EA580C] text-white flex items-center justify-center flex-shrink-0 shadow-xs">
-                <Sparkles className="w-5 h-5 text-amber-200" />
-              </div>
+            <div className="flex items-center gap-3">
+              <KalaKartLogo
+                size="md"
+                className="w-14 h-14 rounded-xl shadow-xs border border-orange-200/80 bg-[#FAF6ED] p-0.5 shrink-0"
+                alt="Kala-Kart Official Logo"
+              />
               <div className="flex-1 min-w-0">
                 <h2 className="text-base font-extrabold text-[#0F172A]">
-                  {language === "hi" ? "शिल्पकार पोर्टल में प्रवेश करें" : "Welcome to Kala-Kart"}
+                  {language === "hi" ? "कला-कार्ट शिल्पकार पोर्टल" : "Welcome to Kala-Kart"}
                 </h2>
                 <p className="text-xs text-stone-600 font-medium leading-relaxed mt-0.5">
                   {language === "hi"

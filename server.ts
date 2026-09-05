@@ -1,5 +1,6 @@
 import express from "express";
 import path from "path";
+import fs from "fs";
 import { fileURLToPath } from "url";
 import { GoogleGenAI, Type } from "@google/genai";
 import dotenv from "dotenv";
@@ -56,6 +57,38 @@ app.get("/api/health", (req, res) => {
     app: "KalaKriti SIH 2026 Virtual Business Manager",
     hasApiKey: !!(process.env.GEMINI_API_KEY && process.env.GEMINI_API_KEY !== "MY_GEMINI_API_KEY"),
   });
+});
+
+// Kala-Kart Official Logo Asset Handler (Serves exact uploaded JPEG image asset)
+app.get([
+  "/WhatsApp%20Image%202026-08-31%20at%2019.51.33.jpeg",
+  "/WhatsApp Image 2026-08-31 at 19.51.33.jpeg",
+  "/kala-kart-logo.jpeg",
+  "/kala-kart-logo.jpg",
+  "/logo.jpeg",
+  "/logo.jpg",
+  /\/WhatsApp.*Image.*\.jpe?g$/i,
+], (req, res) => {
+  const publicDir = path.join(process.cwd(), "public");
+  const candidates = [
+    path.join(publicDir, "WhatsApp Image 2026-08-31 at 19.51.33.jpeg"),
+    path.join(publicDir, "WhatsApp Image 2026-08-31 at 19.51.33.jpg"),
+    path.join(publicDir, "kala-kart-logo.jpeg"),
+    path.join(publicDir, "kala-kart-logo.jpg"),
+    path.join(publicDir, "logo.jpeg"),
+    path.join(publicDir, "logo.jpg"),
+  ];
+
+  for (const filePath of candidates) {
+    if (fs.existsSync(filePath)) {
+      res.setHeader("Content-Type", "image/jpeg");
+      res.setHeader("Cache-Control", "public, max-age=86400");
+      return res.sendFile(filePath);
+    }
+  }
+
+  // If not found yet, respond with 404
+  res.status(404).send("Logo asset WhatsApp Image 2026-08-31 at 19.51.33.jpeg not found in public directory");
 });
 
 // 2. Real Image Enhancement & Background Removal Endpoint (multipart/form-data)
@@ -202,6 +235,73 @@ app.post("/api/gemini/parse-voice", async (req, res) => {
       error: "I couldn't process that information right now. Please try again.",
       messageHi: "मैं अभी उस जानकारी को प्रोसेस नहीं कर सका। कृपया पुनः प्रयास करें।",
     });
+  }
+});
+
+// ==========================================
+// ML PRICING FOUNDATION API ENDPOINTS (STEP 4A)
+// ==========================================
+
+// Get current model metadata & status
+app.get("/api/pricing/metadata", (req, res) => {
+  try {
+    const metaPath = path.join(process.cwd(), "data", "pricing", "model_metadata.json");
+    if (fs.existsSync(metaPath)) {
+      const meta = JSON.parse(fs.readFileSync(metaPath, "utf-8"));
+      return res.json({ success: true, metadata: meta });
+    }
+    return res.json({
+      success: true,
+      metadata: {
+        modelVersion: "pricing-v0.1",
+        modelType: "RandomForestRegressor",
+        status: "dataset_required",
+        notes: "Canonical training dataset is awaiting legitimate empirical field data.",
+      },
+    });
+  } catch (err: any) {
+    return res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// Run pricing prediction
+app.post("/api/pricing/predict", async (req, res) => {
+  try {
+    const { features } = req.body;
+    if (!features) {
+      return res.status(400).json({ success: false, error: "Missing required 'features' object." });
+    }
+
+    const { PricingPipeline } = await import("./src/services/pricing/pricingPipeline");
+    const weightsPath = path.join(process.cwd(), "data", "pricing", "model_weights.json");
+    const metaPath = path.join(process.cwd(), "data", "pricing", "model_metadata.json");
+
+    if (fs.existsSync(weightsPath) && fs.existsSync(metaPath)) {
+      const weights = JSON.parse(fs.readFileSync(weightsPath, "utf-8"));
+      const meta = JSON.parse(fs.readFileSync(metaPath, "utf-8"));
+      // Demo/synthetic data must NEVER power user-facing predictions (Step 4B rule 8).
+      // Only legitimate models trained on verified empirical data with status 'trained' and samples > 0 are loaded.
+      if (
+        meta.status === "trained" &&
+        !meta.trainingDatasetVersion?.includes("synthetic") &&
+        (meta.trainingSampleCount || 0) > 0
+      ) {
+        PricingPipeline.loadSerializedModel(weights, meta);
+      } else {
+        PricingPipeline.resetModel(meta);
+      }
+    } else if (fs.existsSync(metaPath)) {
+      const meta = JSON.parse(fs.readFileSync(metaPath, "utf-8"));
+      PricingPipeline.resetModel(meta);
+    } else {
+      PricingPipeline.resetModel(null);
+    }
+
+    const prediction = await PricingPipeline.predictPrice(features);
+    return res.json({ success: true, prediction });
+  } catch (err: any) {
+    console.error("ML Pricing prediction error:", err);
+    return res.status(500).json({ success: false, error: err.message });
   }
 });
 

@@ -1,0 +1,6188 @@
+{
+  "modelType": "RandomForestRegressor",
+  "config": {
+    "numTrees": 35,
+    "maxDepth": 7,
+    "minSamplesSplit": 3,
+    "minSamplesLeaf": 2,
+    "featureSubspaceRatio": 0.35
+  },
+  "featureNames": [
+    "cat_pottery",
+    "cat_textiles",
+    "cat_metalwork",
+    "cat_woodcraft",
+    "cat_jewelry",
+    "cat_painting",
+    "cat_other",
+    "sub_vase",
+    "sub_planter",
+    "sub_tableware",
+    "sub_bowl",
+    "sub_saree",
+    "sub_dupatta",
+    "sub_stole",
+    "sub_cushion_cover",
+    "sub_bedcover",
+    "sub_table_runner",
+    "sub_figurine",
+    "sub_lamp",
+    "sub_plate",
+    "sub_wall_hanging",
+    "sub_bell",
+    "sub_tray",
+    "sub_sculpture",
+    "sub_box",
+    "sub_coaster_set",
+    "sub_clock",
+    "sub_mirror_frame",
+    "sub_toys",
+    "sub_necklace",
+    "sub_earrings",
+    "sub_bangles",
+    "sub_choker",
+    "sub_ring",
+    "sub_anklet",
+    "sub_wall_art",
+    "sub_scroll",
+    "sub_canvas",
+    "sub_miniature",
+    "sub_diyas",
+    "sub_water_pot",
+    "sub_mug_set",
+    "sub_other",
+    "mat_terracotta",
+    "mat_blue_pottery",
+    "mat_red_clay",
+    "mat_ceramic_clay",
+    "mat_stoneware",
+    "mat_black_clay",
+    "mat_chanderi_silk",
+    "mat_cotton",
+    "mat_tussar_silk",
+    "mat_pashmina_wool",
+    "mat_linen_cotton",
+    "mat_jute_cotton",
+    "mat_brass",
+    "mat_bell_metal",
+    "mat_iron",
+    "mat_copper",
+    "mat_iron_brass",
+    "mat_sheesham_wood",
+    "mat_sandalwood",
+    "mat_teak_wood",
+    "mat_mango_wood",
+    "mat_reclaimed_wood",
+    "mat_soft_wood",
+    "mat_silver",
+    "mat_brass_stone",
+    "mat_lac",
+    "mat_beads_thread",
+    "mat_handmade_paper",
+    "mat_cloth_canvas",
+    "mat_wood",
+    "mat_cotton_canvas",
+    "mat_silk",
+    "mat_mdf_base",
+    "mat_other",
+    "tech_wheel_thrown",
+    "tech_hand_glazed",
+    "tech_moulded",
+    "tech_studio_pottery",
+    "tech_pinched",
+    "tech_handloom_weave",
+    "tech_jamdani",
+    "tech_block_print",
+    "tech_sozni_embroidery",
+    "tech_kantha_stitch",
+    "tech_dokra_lost_wax",
+    "tech_filigree_carving",
+    "tech_hand_hammered",
+    "tech_wrought_iron_forging",
+    "tech_meenakari",
+    "tech_brass_inlay",
+    "tech_micro_carving",
+    "tech_jali_carving",
+    "tech_resin_art",
+    "tech_rustic_distressed",
+    "tech_filigree",
+    "tech_hand_moulded",
+    "tech_stone_studded",
+    "tech_dokra_fusion",
+    "tech_kundan",
+    "tech_madhubani",
+    "tech_pattachitra",
+    "tech_warli_art",
+    "tech_gond_art",
+    "tech_mughal_miniature",
+    "tech_hand_pinched",
+    "tech_burnished",
+    "tech_dabu_mud_resist",
+    "tech_applique_work",
+    "tech_kutch_copper_coated",
+    "tech_jharokha_carving",
+    "tech_channapatna_lacquer",
+    "tech_ghungroo",
+    "tech_kalamkari_art",
+    "tech_studio_hand_glazed",
+    "tech_other",
+    "col_natural_ochre",
+    "col_cobalt_blue",
+    "col_terracotta",
+    "col_matte_green",
+    "col_earthy_brown",
+    "col_golden_cream",
+    "col_indigo",
+    "col_maroon",
+    "col_ivory",
+    "col_mustard_yellow",
+    "col_antique_gold",
+    "col_brass_yellow",
+    "col_golden_bronze",
+    "col_matte_black",
+    "col_enameled_red",
+    "col_natural_walnut",
+    "col_natural_sandal",
+    "col_dark_teak",
+    "col_ocean_blue",
+    "col_driftwood_grey",
+    "col_oxidized_silver",
+    "col_peacock_blue",
+    "col_ruby_red",
+    "col_golden_black",
+    "col_emerald_green",
+    "col_multicolor",
+    "col_crimson_red",
+    "col_white_on_mud",
+    "col_vibrant_yellow",
+    "col_gold_leaf_blue",
+    "col_natural_clay",
+    "col_indigo_white",
+    "col_natural_beige",
+    "col_rustic_copper",
+    "col_antiqued_white",
+    "col_bright_rainbow",
+    "col_antique_brass",
+    "col_earthy_maroon",
+    "col_slate_grey",
+    "col_other",
+    "dim_length_cm",
+    "dim_width_cm",
+    "dim_height_cm",
+    "dim_diameter_cm",
+    "has_length",
+    "has_width",
+    "has_height",
+    "has_diameter",
+    "dim_area_cm2",
+    "dim_volume_cm3",
+    "weight_g",
+    "has_weight",
+    "quantity",
+    "is_handmade",
+    "production_time_hours",
+    "has_production_time",
+    "cost_raw_material_inr",
+    "cost_labor_inr",
+    "cost_packaging_inr",
+    "cost_other_inr",
+    "cost_total_direct_inr",
+    "cost_per_unit_inr",
+    "market_has_data",
+    "market_median_price_inr",
+    "market_min_price_inr",
+    "market_max_price_inr",
+    "market_price_spread_inr",
+    "market_sample_count",
+    "market_trend_score",
+    "desc_length_chars",
+    "desc_design_complexity_score",
+    "desc_mentions_heritage",
+    "desc_mentions_fair_wage",
+    "img_has_visual_features",
+    "img_quality_score",
+    "img_visual_complexity",
+    "img_confidence"
+  ],
+  "featureImportances": [
+    0,
+    0,
+    0.0004,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0.0001,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0.0053,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0.0002,
+    0,
+    0,
+    0,
+    0.0001,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0.0041,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0.0001,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0.0023,
+    0.0289,
+    0.0001,
+    0,
+    0.0008,
+    0.0002,
+    0.0008,
+    0.0001,
+    0.0019,
+    0.0061,
+    0.0007,
+    0,
+    0,
+    0,
+    0.0223,
+    0,
+    0.047,
+    0.0845,
+    0.0324,
+    0.0362,
+    0.0699,
+    0.0706,
+    0,
+    0.1593,
+    0.051,
+    0.0644,
+    0.0506,
+    0.0058,
+    0.0773,
+    0.1087,
+    0.0276,
+    0,
+    0,
+    0,
+    0.0003,
+    0.0399,
+    0
+  ],
+  "trees": [
+    {
+      "isLeaf": false,
+      "featureIndex": 184,
+      "threshold": 2100,
+      "prediction": 2333.4375,
+      "variance": 4441147.55859375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 182,
+        "threshold": 1850,
+        "prediction": 1726.551724137931,
+        "variance": 971932.9369797858,
+        "sampleCount": 29,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 187,
+          "threshold": 170,
+          "prediction": 1198.5714285714287,
+          "variance": 227212.24489795914,
+          "sampleCount": 21,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 187,
+            "threshold": 135,
+            "prediction": 711.1111111111111,
+            "variance": 34209.87654320988,
+            "sampleCount": 9,
+            "left": {
+              "isLeaf": true,
+              "prediction": 410,
+              "variance": 2500,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 182,
+              "threshold": 670,
+              "prediction": 797.1428571428571,
+              "variance": 9963.26530612245,
+              "sampleCount": 7,
+              "left": {
+                "isLeaf": false,
+                "featureIndex": 174,
+                "threshold": 115,
+                "prediction": 720,
+                "variance": 2950,
+                "sampleCount": 4,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 670,
+                  "variance": 900,
+                  "sampleCount": 2
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 770,
+                  "variance": 0,
+                  "sampleCount": 2
+                }
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 900,
+                "variance": 800,
+                "sampleCount": 3
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 178,
+            "threshold": 1080,
+            "prediction": 1564.1666666666667,
+            "variance": 60090.97222222222,
+            "sampleCount": 12,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 179,
+              "threshold": 932.5,
+              "prediction": 1405,
+              "variance": 9375,
+              "sampleCount": 8,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1280,
+                "variance": 0,
+                "sampleCount": 3
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1480,
+                "variance": 0,
+                "sampleCount": 5
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 56,
+              "threshold": 0.5,
+              "prediction": 1882.5,
+              "variance": 9518.75,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1785,
+                "variance": 25,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1980,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 179,
+          "threshold": 2320,
+          "prediction": 3112.5,
+          "variance": 274218.75,
+          "sampleCount": 8,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 185,
+            "threshold": 20,
+            "prediction": 2858.3333333333335,
+            "variance": 47013.88888888888,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 181,
+              "threshold": 2625,
+              "prediction": 2712.5,
+              "variance": 6718.75,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 2650,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 2775,
+                "variance": 5625,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 3150,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 3875,
+            "variance": 180625,
+            "sampleCount": 2
+          }
+        }
+      },
+      "right": {
+        "isLeaf": true,
+        "prediction": 8200,
+        "variance": 0,
+        "sampleCount": 3
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 181,
+      "threshold": 2075,
+      "prediction": 2206.5625,
+      "variance": 2567866.30859375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 183,
+        "threshold": 1275,
+        "prediction": 1035.8823529411766,
+        "variance": 105012.45674740487,
+        "sampleCount": 17,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 181,
+          "threshold": 765,
+          "prediction": 821,
+          "variance": 36769,
+          "sampleCount": 10,
+          "left": {
+            "isLeaf": true,
+            "prediction": 566.6666666666666,
+            "variance": 21955.55555555556,
+            "sampleCount": 3
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 158,
+            "threshold": 18,
+            "prediction": 930,
+            "variance": 3514.285714285714,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 187,
+              "threshold": 157.5,
+              "prediction": 896,
+              "variance": 864,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 920,
+                "variance": 0,
+                "sampleCount": 3
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 860,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1015,
+              "variance": 25,
+              "sampleCount": 2
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 182,
+          "threshold": 1125,
+          "prediction": 1342.857142857143,
+          "variance": 42306.12244897959,
+          "sampleCount": 7,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 53,
+            "threshold": 0.5,
+            "prediction": 1228,
+            "variance": 4056,
+            "sampleCount": 5,
+            "left": {
+              "isLeaf": true,
+              "prediction": 1280,
+              "variance": 0,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1150,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 1630,
+            "variance": 22500,
+            "sampleCount": 2
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 178,
+        "threshold": 3330,
+        "prediction": 3533.3333333333335,
+        "variance": 2045555.5555555553,
+        "sampleCount": 15,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 179,
+          "threshold": 2215,
+          "prediction": 3038.4615384615386,
+          "variance": 200059.17159763316,
+          "sampleCount": 13,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 177,
+            "threshold": 65,
+            "prediction": 2830,
+            "variance": 23600,
+            "sampleCount": 10,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2550,
+              "variance": 10000,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 193,
+              "threshold": 0.875,
+              "prediction": 2900,
+              "variance": 2500,
+              "sampleCount": 8,
+              "left": {
+                "isLeaf": true,
+                "prediction": 2950,
+                "variance": 0,
+                "sampleCount": 4
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 2850,
+                "variance": 0,
+                "sampleCount": 4
+              }
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 3733.3333333333335,
+            "variance": 160555.55555555556,
+            "sampleCount": 3
+          }
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 6750,
+          "variance": 2102500,
+          "sampleCount": 2
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 176,
+      "threshold": 97.5,
+      "prediction": 2019.375,
+      "variance": 1664487.109375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 184,
+        "threshold": 365,
+        "prediction": 957.0588235294117,
+        "variance": 202456.05536332182,
+        "sampleCount": 17,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 175,
+          "threshold": 335,
+          "prediction": 695.8333333333334,
+          "variance": 27457.638888888894,
+          "sampleCount": 12,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 174,
+            "threshold": 62.5,
+            "prediction": 592.5,
+            "variance": 6693.75,
+            "sampleCount": 8,
+            "left": {
+              "isLeaf": true,
+              "prediction": 460,
+              "variance": 0,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 182,
+              "threshold": 515,
+              "prediction": 636.6666666666666,
+              "variance": 1122.2222222222222,
+              "sampleCount": 6,
+              "left": {
+                "isLeaf": true,
+                "prediction": 600,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 655,
+                "variance": 675,
+                "sampleCount": 4
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 161,
+            "threshold": 3.25,
+            "prediction": 902.5,
+            "variance": 4918.75,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 965,
+              "variance": 2025,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 840,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 178,
+          "threshold": 1050,
+          "prediction": 1584,
+          "variance": 65624,
+          "sampleCount": 5,
+          "left": {
+            "isLeaf": true,
+            "prediction": 1280,
+            "variance": 10000,
+            "sampleCount": 2
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 1786.6666666666667,
+            "variance": 22.222222222222218,
+            "sampleCount": 3
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 183,
+        "threshold": 4400,
+        "prediction": 3223.3333333333335,
+        "variance": 592955.5555555557,
+        "sampleCount": 15,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 179,
+          "threshold": 1797.5,
+          "prediction": 2870.8333333333335,
+          "variance": 64357.638888888905,
+          "sampleCount": 12,
+          "left": {
+            "isLeaf": true,
+            "prediction": 2533.3333333333335,
+            "variance": 13888.888888888889,
+            "sampleCount": 3
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 158,
+            "threshold": 32.5,
+            "prediction": 2983.3333333333335,
+            "variance": 30555.555555555555,
+            "sampleCount": 9,
+            "left": {
+              "isLeaf": true,
+              "prediction": 3300,
+              "variance": 0,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 27,
+              "threshold": 0.5,
+              "prediction": 2892.8571428571427,
+              "variance": 2448.9795918367345,
+              "sampleCount": 7,
+              "left": {
+                "isLeaf": true,
+                "prediction": 2850,
+                "variance": 0,
+                "sampleCount": 4
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 2950,
+                "variance": 0,
+                "sampleCount": 3
+              }
+            }
+          }
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 4633.333333333333,
+          "variance": 222222.22222222222,
+          "sampleCount": 3
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 181,
+      "threshold": 4300,
+      "prediction": 2141.25,
+      "variance": 3489904.6875,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 182,
+        "threshold": 1900,
+        "prediction": 1614.4827586206898,
+        "variance": 697769.5600475622,
+        "sampleCount": 29,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 179,
+          "threshold": 902.5,
+          "prediction": 1198.6363636363637,
+          "variance": 185675.4132231405,
+          "sampleCount": 22,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 182,
+            "threshold": 735,
+            "prediction": 921.4285714285714,
+            "variance": 58583.67346938776,
+            "sampleCount": 14,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 192,
+              "threshold": 0.81,
+              "prediction": 693.3333333333334,
+              "variance": 28322.22222222222,
+              "sampleCount": 6,
+              "left": {
+                "isLeaf": true,
+                "prediction": 460,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": false,
+                "featureIndex": 2,
+                "threshold": 0.5,
+                "prediction": 810,
+                "variance": 1650,
+                "sampleCount": 4,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 850,
+                  "variance": 100,
+                  "sampleCount": 2
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 770,
+                  "variance": 0,
+                  "sampleCount": 2
+                }
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 172,
+              "threshold": 7.5,
+              "prediction": 1092.5,
+              "variance": 12993.75,
+              "sampleCount": 8,
+              "left": {
+                "isLeaf": true,
+                "prediction": 987.5,
+                "variance": 1518.75,
+                "sampleCount": 4
+              },
+              "right": {
+                "isLeaf": false,
+                "featureIndex": 170,
+                "threshold": 4,
+                "prediction": 1197.5,
+                "variance": 2418.75,
+                "sampleCount": 4,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 1215,
+                  "variance": 4225,
+                  "sampleCount": 2
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 1180,
+                  "variance": 0,
+                  "sampleCount": 2
+                }
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 174,
+            "threshold": 260,
+            "prediction": 1683.75,
+            "variance": 38273.4375,
+            "sampleCount": 8,
+            "left": {
+              "isLeaf": true,
+              "prediction": 1446.6666666666667,
+              "variance": 2222.222222222222,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 133,
+              "threshold": 0.5,
+              "prediction": 1826,
+              "variance": 5944,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1880,
+                "variance": 10000,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1790,
+                "variance": 0,
+                "sampleCount": 3
+              }
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 178,
+          "threshold": 1885,
+          "prediction": 2921.4285714285716,
+          "variance": 55612.24489795918,
+          "sampleCount": 7,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 73,
+            "threshold": 0.5,
+            "prediction": 2775,
+            "variance": 5625,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2850,
+              "variance": 0,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2700,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 3116.6666666666665,
+            "variance": 55555.555555555555,
+            "sampleCount": 3
+          }
+        }
+      },
+      "right": {
+        "isLeaf": true,
+        "prediction": 7233.333333333333,
+        "variance": 1868888.888888889,
+        "sampleCount": 3
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 182,
+      "threshold": 1700,
+      "prediction": 2127.8125,
+      "variance": 1381235.83984375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 183,
+        "threshold": 1425,
+        "prediction": 1175.8823529411766,
+        "variance": 127141.8685121107,
+        "sampleCount": 17,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 175,
+          "threshold": 440,
+          "prediction": 922,
+          "variance": 25396,
+          "sampleCount": 10,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 183,
+            "threshold": 940,
+            "prediction": 811.6666666666666,
+            "variance": 7813.888888888888,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 705,
+              "variance": 4225,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 140,
+              "threshold": 0.5,
+              "prediction": 865,
+              "variance": 1075,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 890,
+                "variance": 900,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 840,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 154,
+            "threshold": 0.5,
+            "prediction": 1087.5,
+            "variance": 6118.75,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 1165,
+              "variance": 225,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1010,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 174,
+          "threshold": 260,
+          "prediction": 1538.5714285714287,
+          "variance": 48869.38775510205,
+          "sampleCount": 7,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 166,
+            "threshold": 695,
+            "prediction": 1355,
+            "variance": 6875,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 1280,
+              "variance": 0,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1430,
+              "variance": 2500,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 1783.3333333333333,
+            "variance": 22.222222222222218,
+            "sampleCount": 3
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 184,
+        "threshold": 1300,
+        "prediction": 3206.6666666666665,
+        "variance": 611622.2222222221,
+        "sampleCount": 15,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 182,
+          "threshold": 2500,
+          "prediction": 2850,
+          "variance": 72916.66666666667,
+          "sampleCount": 12,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 183,
+            "threshold": 3300,
+            "prediction": 2716.6666666666665,
+            "variance": 19444.444444444445,
+            "sampleCount": 9,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 183,
+              "threshold": 3150,
+              "prediction": 2633.3333333333335,
+              "variance": 7222.222222222222,
+              "sampleCount": 6,
+              "left": {
+                "isLeaf": true,
+                "prediction": 2600,
+                "variance": 7500,
+                "sampleCount": 4
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 2700,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2883.3333333333335,
+              "variance": 2222.222222222222,
+              "sampleCount": 3
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 3250,
+            "variance": 20000,
+            "sampleCount": 3
+          }
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 4633.333333333333,
+          "variance": 222222.22222222222,
+          "sampleCount": 3
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 186,
+      "threshold": 0.225,
+      "prediction": 1736.875,
+      "variance": 1914227.734375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 183,
+        "threshold": 1080,
+        "prediction": 899.0909090909091,
+        "variance": 173490.08264462813,
+        "sampleCount": 22,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 178,
+          "threshold": 355,
+          "prediction": 560.8333333333334,
+          "variance": 23740.972222222223,
+          "sampleCount": 12,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 160,
+            "threshold": 2,
+            "prediction": 400,
+            "variance": 2400,
+            "sampleCount": 5,
+            "left": {
+              "isLeaf": true,
+              "prediction": 460,
+              "variance": 0,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 360,
+              "variance": 0,
+              "sampleCount": 3
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 188,
+            "threshold": 0.575,
+            "prediction": 675.7142857142857,
+            "variance": 7310.204081632653,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 80,
+              "threshold": 0.5,
+              "prediction": 624,
+              "variance": 384,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 600,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 640,
+                "variance": 0,
+                "sampleCount": 3
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 805,
+              "variance": 1225,
+              "sampleCount": 2
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 182,
+          "threshold": 1075,
+          "prediction": 1305,
+          "variance": 51125,
+          "sampleCount": 10,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 178,
+            "threshold": 740,
+            "prediction": 1153.3333333333333,
+            "variance": 11855.555555555557,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 1015,
+              "variance": 25,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 187,
+              "threshold": 180,
+              "prediction": 1222.5,
+              "variance": 3418.75,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1165,
+                "variance": 225,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1280,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 158,
+            "threshold": 39,
+            "prediction": 1532.5,
+            "variance": 23768.75,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 1585,
+              "variance": 42025,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1480,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 175,
+        "threshold": 1900,
+        "prediction": 3580,
+        "variance": 802600,
+        "sampleCount": 10,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 166,
+          "threshold": 1112.5,
+          "prediction": 3150,
+          "variance": 78750,
+          "sampleCount": 8,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 158,
+            "threshold": 30,
+            "prediction": 3360,
+            "variance": 5400,
+            "sampleCount": 5,
+            "left": {
+              "isLeaf": true,
+              "prediction": 3300,
+              "variance": 0,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 3450,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 2800,
+            "variance": 5000,
+            "sampleCount": 3
+          }
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 5300,
+          "variance": 0,
+          "sampleCount": 2
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 193,
+      "threshold": 0.925,
+      "prediction": 2244.0625,
+      "variance": 4785024.12109375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 178,
+        "threshold": 1050,
+        "prediction": 1509.2857142857142,
+        "variance": 866499.4897959186,
+        "sampleCount": 28,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 185,
+          "threshold": 23.5,
+          "prediction": 832.9411764705883,
+          "variance": 94973.70242214532,
+          "sampleCount": 17,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 175,
+            "threshold": 440,
+            "prediction": 970.7692307692307,
+            "variance": 42884.023668639056,
+            "sampleCount": 13,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 174,
+              "threshold": 130,
+              "prediction": 804.2857142857143,
+              "variance": 4595.918367346938,
+              "sampleCount": 7,
+              "left": {
+                "isLeaf": true,
+                "prediction": 752.5,
+                "variance": 918.75,
+                "sampleCount": 4
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 873.3333333333334,
+                "variance": 1155.5555555555554,
+                "sampleCount": 3
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 160,
+              "threshold": 3,
+              "prediction": 1165,
+              "variance": 17491.666666666668,
+              "sampleCount": 6,
+              "left": {
+                "isLeaf": false,
+                "featureIndex": 159,
+                "threshold": 37.5,
+                "prediction": 1082.5,
+                "variance": 4568.75,
+                "sampleCount": 4,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 1015,
+                  "variance": 25,
+                  "sampleCount": 2
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 1150,
+                  "variance": 0,
+                  "sampleCount": 2
+                }
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1330,
+                "variance": 2500,
+                "sampleCount": 2
+              }
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 385,
+            "variance": 1875,
+            "sampleCount": 4
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 182,
+          "threshold": 1775,
+          "prediction": 2554.5454545454545,
+          "variance": 259333.88429752068,
+          "sampleCount": 11,
+          "left": {
+            "isLeaf": true,
+            "prediction": 1850,
+            "variance": 8466.666666666666,
+            "sampleCount": 3
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 168,
+            "threshold": 1215,
+            "prediction": 2818.75,
+            "variance": 97460.9375,
+            "sampleCount": 8,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 183,
+              "threshold": 2950,
+              "prediction": 2658.3333333333335,
+              "variance": 27013.888888888887,
+              "sampleCount": 6,
+              "left": {
+                "isLeaf": true,
+                "prediction": 2450,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": false,
+                "featureIndex": 168,
+                "threshold": 280,
+                "prediction": 2762.5,
+                "variance": 7968.75,
+                "sampleCount": 4,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 2850,
+                  "variance": 0,
+                  "sampleCount": 2
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 2675,
+                  "variance": 625,
+                  "sampleCount": 2
+                }
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 3300,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": true,
+        "prediction": 7387.5,
+        "variance": 1980468.75,
+        "sampleCount": 4
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 174,
+      "threshold": 850,
+      "prediction": 2168.75,
+      "variance": 2943223.4375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 174,
+        "threshold": 240,
+        "prediction": 1630.357142857143,
+        "variance": 798074.8724489795,
+        "sampleCount": 28,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 183,
+          "threshold": 1020,
+          "prediction": 933.125,
+          "variance": 58483.984375,
+          "sampleCount": 16,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 160,
+            "threshold": 1.5,
+            "prediction": 681.6666666666666,
+            "variance": 27213.888888888887,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 460,
+              "variance": 0,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 161,
+              "threshold": 3.25,
+              "prediction": 792.5,
+              "variance": 3968.75,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 735,
+                "variance": 1225,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 850,
+                "variance": 100,
+                "sampleCount": 2
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 183,
+            "threshold": 1275,
+            "prediction": 1084,
+            "variance": 16544,
+            "sampleCount": 10,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 95,
+              "threshold": 0.5,
+              "prediction": 986.6666666666666,
+              "variance": 2222.222222222222,
+              "sampleCount": 6,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1020,
+                "variance": 0,
+                "sampleCount": 4
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 920,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 172,
+              "threshold": 8.5,
+              "prediction": 1230,
+              "variance": 2500,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1280,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1180,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 162,
+          "threshold": 0.5,
+          "prediction": 2560,
+          "variance": 271783.3333333333,
+          "sampleCount": 12,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 184,
+            "threshold": 775,
+            "prediction": 2103.3333333333335,
+            "variance": 65088.88888888888,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 1930,
+              "variance": 7500,
+              "sampleCount": 4
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2450,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 176,
+            "threshold": 115,
+            "prediction": 3016.6666666666665,
+            "variance": 61388.8888888889,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2783.3333333333335,
+              "variance": 8888.888888888889,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 3250,
+              "variance": 5000,
+              "sampleCount": 3
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 159,
+        "threshold": 92.5,
+        "prediction": 5937.5,
+        "variance": 1726718.75,
+        "sampleCount": 4,
+        "left": {
+          "isLeaf": true,
+          "prediction": 6575,
+          "variance": 2640625,
+          "sampleCount": 2
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 5300,
+          "variance": 0,
+          "sampleCount": 2
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 187,
+      "threshold": 260,
+      "prediction": 1931.875,
+      "variance": 2498683.984375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 174,
+        "threshold": 370,
+        "prediction": 1517.9310344827586,
+        "variance": 646450.8917954817,
+        "sampleCount": 29,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 184,
+          "threshold": 335,
+          "prediction": 1148.695652173913,
+          "variance": 120124.3856332703,
+          "sampleCount": 23,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 177,
+            "threshold": 22.5,
+            "prediction": 661.6666666666666,
+            "variance": 15547.22222222222,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 553.3333333333334,
+              "variance": 4355.555555555556,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 770,
+              "variance": 3266.6666666666665,
+              "sampleCount": 3
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 181,
+            "threshold": 1400,
+            "prediction": 1320.5882352941176,
+            "variance": 43770.24221453286,
+            "sampleCount": 17,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 183,
+              "threshold": 1400,
+              "prediction": 1225.3846153846155,
+              "variance": 11794.082840236686,
+              "sampleCount": 13,
+              "left": {
+                "isLeaf": false,
+                "featureIndex": 168,
+                "threshold": 265,
+                "prediction": 1135.7142857142858,
+                "variance": 2338.7755102040805,
+                "sampleCount": 7,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 1150,
+                  "variance": 0,
+                  "sampleCount": 5
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 1100,
+                  "variance": 6400,
+                  "sampleCount": 2
+                }
+              },
+              "right": {
+                "isLeaf": false,
+                "featureIndex": 3,
+                "threshold": 0.5,
+                "prediction": 1330,
+                "variance": 2500,
+                "sampleCount": 6,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 1280,
+                  "variance": 0,
+                  "sampleCount": 3
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 1380,
+                  "variance": 0,
+                  "sampleCount": 3
+                }
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 166,
+              "threshold": 727.2345024703866,
+              "prediction": 1630,
+              "variance": 22500,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1780,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1480,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 174,
+          "threshold": 470,
+          "prediction": 2933.3333333333335,
+          "variance": 138055.55555555553,
+          "sampleCount": 6,
+          "left": {
+            "isLeaf": true,
+            "prediction": 2450,
+            "variance": 0,
+            "sampleCount": 2
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 188,
+            "threshold": 0.825,
+            "prediction": 3175,
+            "variance": 31875,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 3150,
+              "variance": 0,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 3200,
+              "variance": 62500,
+              "sampleCount": 2
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": true,
+        "prediction": 5933.333333333333,
+        "variance": 2735555.5555555555,
+        "sampleCount": 3
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 175,
+      "threshold": 1800,
+      "prediction": 2438.4375,
+      "variance": 3505544.43359375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 187,
+        "threshold": 215,
+        "prediction": 1780.7407407407406,
+        "variance": 772895.7475994513,
+        "sampleCount": 27,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 182,
+          "threshold": 1125,
+          "prediction": 1237.7777777777778,
+          "variance": 215750.61728395062,
+          "sampleCount": 18,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 181,
+            "threshold": 935,
+            "prediction": 909.0909090909091,
+            "variance": 52008.264462809915,
+            "sampleCount": 11,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 166,
+              "threshold": 33.5,
+              "prediction": 772.8571428571429,
+              "variance": 20648.979591836738,
+              "sampleCount": 7,
+              "left": {
+                "isLeaf": true,
+                "prediction": 580,
+                "variance": 14400,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": false,
+                "featureIndex": 168,
+                "threshold": 450,
+                "prediction": 850,
+                "variance": 2320,
+                "sampleCount": 5,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 805,
+                  "variance": 1225,
+                  "sampleCount": 2
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 880,
+                  "variance": 800,
+                  "sampleCount": 3
+                }
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 192,
+              "threshold": 0.835,
+              "prediction": 1147.5,
+              "variance": 17568.75,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1015,
+                "variance": 25,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1280,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 20,
+            "threshold": 0.5,
+            "prediction": 1754.2857142857142,
+            "variance": 36510.204081632655,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 174,
+              "threshold": 350,
+              "prediction": 1864,
+              "variance": 8984,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1786.6666666666667,
+                "variance": 22.222222222222218,
+                "sampleCount": 3
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1980,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1480,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 183,
+          "threshold": 3350,
+          "prediction": 2866.6666666666665,
+          "variance": 118333.33333333333,
+          "sampleCount": 9,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 159,
+            "threshold": 4,
+            "prediction": 2590,
+            "variance": 13400,
+            "sampleCount": 5,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2450,
+              "variance": 0,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2683.3333333333335,
+              "variance": 555.5555555555555,
+              "sampleCount": 3
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 192,
+            "threshold": 0.915,
+            "prediction": 3212.5,
+            "variance": 34218.75,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 3050,
+              "variance": 10000,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 3375,
+              "variance": 5625,
+              "sampleCount": 2
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 52,
+        "threshold": 0.5,
+        "prediction": 5990,
+        "variance": 3312400,
+        "sampleCount": 5,
+        "left": {
+          "isLeaf": true,
+          "prediction": 4516.666666666667,
+          "variance": 93888.88888888889,
+          "sampleCount": 3
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 8200,
+          "variance": 0,
+          "sampleCount": 2
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 181,
+      "threshold": 3950,
+      "prediction": 2640,
+      "variance": 4779206.25,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 182,
+        "threshold": 1500,
+        "prediction": 1718.4615384615386,
+        "variance": 783305.3254437869,
+        "sampleCount": 26,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 175,
+          "threshold": 500,
+          "prediction": 1078.125,
+          "variance": 126952.734375,
+          "sampleCount": 16,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 174,
+            "threshold": 100,
+            "prediction": 760,
+            "variance": 28542.85714285714,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": true,
+              "prediction": 530,
+              "variance": 4900,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 166,
+              "threshold": 108.96902001294993,
+              "prediction": 852,
+              "variance": 8376,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 793.3333333333334,
+                "variance": 1088.888888888889,
+                "sampleCount": 3
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 940,
+                "variance": 6400,
+                "sampleCount": 2
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 163,
+            "threshold": 0.5,
+            "prediction": 1325.5555555555557,
+            "variance": 63558.02469135803,
+            "sampleCount": 9,
+            "left": {
+              "isLeaf": true,
+              "prediction": 1780,
+              "variance": 0,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 187,
+              "threshold": 165,
+              "prediction": 1195.7142857142858,
+              "variance": 5853.061224489796,
+              "sampleCount": 7,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1150,
+                "variance": 0,
+                "sampleCount": 3
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1230,
+                "variance": 7500,
+                "sampleCount": 4
+              }
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 2,
+          "threshold": 0.5,
+          "prediction": 2743,
+          "variance": 127741,
+          "sampleCount": 10,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 167,
+            "threshold": 1000,
+            "prediction": 2935.714285714286,
+            "variance": 37653.0612244898,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": true,
+              "prediction": 3150,
+              "variance": 0,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 176,
+              "threshold": 105,
+              "prediction": 2775,
+              "variance": 5625,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 2700,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 2850,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 2293.3333333333335,
+            "variance": 49088.88888888888,
+            "sampleCount": 3
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 179,
+        "threshold": 4725,
+        "prediction": 6633.333333333333,
+        "variance": 2468055.555555556,
+        "sampleCount": 6,
+        "left": {
+          "isLeaf": true,
+          "prediction": 5066.666666666667,
+          "variance": 27222.22222222222,
+          "sampleCount": 3
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 8200,
+          "variance": 0,
+          "sampleCount": 3
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 188,
+      "threshold": 0.79,
+      "prediction": 1503.125,
+      "variance": 792815.234375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 181,
+        "threshold": 1040,
+        "prediction": 1076,
+        "variance": 155440,
+        "sampleCount": 25,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 174,
+          "threshold": 115,
+          "prediction": 750.7692307692307,
+          "variance": 28330.177514792904,
+          "sampleCount": 13,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 185,
+            "threshold": 21.5,
+            "prediction": 600,
+            "variance": 13200,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 680,
+              "variance": 800,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 520,
+              "variance": 12800,
+              "sampleCount": 3
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 182,
+            "threshold": 735,
+            "prediction": 880,
+            "variance": 5114.285714285715,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 4,
+              "threshold": 0.5,
+              "prediction": 827.5,
+              "variance": 1168.75,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 815,
+                "variance": 2025,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 840,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 950,
+              "variance": 1800,
+              "sampleCount": 3
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 177,
+          "threshold": 42.5,
+          "prediction": 1428.3333333333333,
+          "variance": 54413.8888888889,
+          "sampleCount": 12,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 182,
+            "threshold": 1075,
+            "prediction": 1337,
+            "variance": 13441,
+            "sampleCount": 10,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 179,
+              "threshold": 622.5,
+              "prediction": 1234,
+              "variance": 3264,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1165,
+                "variance": 225,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1280,
+                "variance": 0,
+                "sampleCount": 3
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 3,
+              "threshold": 0.5,
+              "prediction": 1440,
+              "variance": 2400,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1480,
+                "variance": 0,
+                "sampleCount": 3
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1380,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 1885,
+            "variance": 9025,
+            "sampleCount": 2
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 183,
+        "threshold": 3450,
+        "prediction": 3028.5714285714284,
+        "variance": 90612.24489795917,
+        "sampleCount": 7,
+        "left": {
+          "isLeaf": true,
+          "prediction": 2575,
+          "variance": 15625,
+          "sampleCount": 2
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 187,
+          "threshold": 242.5,
+          "prediction": 3210,
+          "variance": 5400,
+          "sampleCount": 5,
+          "left": {
+            "isLeaf": true,
+            "prediction": 3150,
+            "variance": 0,
+            "sampleCount": 3
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 3300,
+            "variance": 0,
+            "sampleCount": 2
+          }
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 178,
+      "threshold": 1327.5,
+      "prediction": 1771.25,
+      "variance": 1808385.9375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 182,
+        "threshold": 770,
+        "prediction": 951.3636363636364,
+        "variance": 119466.32231404957,
+        "sampleCount": 22,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 178,
+          "threshold": 435,
+          "prediction": 631.8181818181819,
+          "variance": 22087.603305785127,
+          "sampleCount": 11,
+          "left": {
+            "isLeaf": true,
+            "prediction": 488,
+            "variance": 3136,
+            "sampleCount": 5
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 186,
+            "threshold": 0.13,
+            "prediction": 751.6666666666666,
+            "variance": 6280.555555555556,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 680,
+              "variance": 800,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 823.3333333333334,
+              "variance": 1488.888888888889,
+              "sampleCount": 3
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 170,
+          "threshold": 1.5,
+          "prediction": 1270.909090909091,
+          "variance": 12626.446280991733,
+          "sampleCount": 11,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 159,
+            "threshold": 17.5,
+            "prediction": 1330,
+            "variance": 2500,
+            "sampleCount": 8,
+            "left": {
+              "isLeaf": true,
+              "prediction": 1280,
+              "variance": 0,
+              "sampleCount": 4
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1380,
+              "variance": 0,
+              "sampleCount": 4
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 1113.3333333333333,
+            "variance": 5488.88888888889,
+            "sampleCount": 3
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 183,
+        "threshold": 4400,
+        "prediction": 3575,
+        "variance": 791625,
+        "sampleCount": 10,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 181,
+          "threshold": 3050,
+          "prediction": 3028.5714285714284,
+          "variance": 62040.816326530614,
+          "sampleCount": 7,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 185,
+            "threshold": 16.5,
+            "prediction": 2825,
+            "variance": 11875,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2800,
+              "variance": 22500,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2850,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 3300,
+            "variance": 0,
+            "sampleCount": 3
+          }
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 4850,
+          "variance": 171666.66666666666,
+          "sampleCount": 3
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 178,
+      "threshold": 1530,
+      "prediction": 1814.375,
+      "variance": 1497624.609375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 176,
+        "threshold": 67.5,
+        "prediction": 1060,
+        "variance": 297428.5714285714,
+        "sampleCount": 21,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 107,
+          "threshold": 0.5,
+          "prediction": 700,
+          "variance": 35914.28571428572,
+          "sampleCount": 14,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 187,
+            "threshold": 147.5,
+            "prediction": 792.7272727272727,
+            "variance": 5583.471074380166,
+            "sampleCount": 11,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 2,
+              "threshold": 0.5,
+              "prediction": 736.6666666666666,
+              "variance": 2522.222222222222,
+              "sampleCount": 6,
+              "left": {
+                "isLeaf": true,
+                "prediction": 670,
+                "variance": 900,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 770,
+                "variance": 0,
+                "sampleCount": 4
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 188,
+              "threshold": 0.685,
+              "prediction": 860,
+              "variance": 960,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 890,
+                "variance": 900,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 840,
+                "variance": 0,
+                "sampleCount": 3
+              }
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 360,
+            "variance": 0,
+            "sampleCount": 3
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 179,
+          "threshold": 1087.5,
+          "prediction": 1780,
+          "variance": 42857.142857142855,
+          "sampleCount": 7,
+          "left": {
+            "isLeaf": true,
+            "prediction": 1480,
+            "variance": 0,
+            "sampleCount": 2
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 168,
+            "threshold": 1475,
+            "prediction": 1900,
+            "variance": 9600,
+            "sampleCount": 5,
+            "left": {
+              "isLeaf": true,
+              "prediction": 1980,
+              "variance": 0,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1780,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 178,
+        "threshold": 2485,
+        "prediction": 3254.5454545454545,
+        "variance": 628388.4297520661,
+        "sampleCount": 11,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 176,
+          "threshold": 115,
+          "prediction": 2911.1111111111113,
+          "variance": 63765.43209876543,
+          "sampleCount": 9,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 105,
+            "threshold": 0.5,
+            "prediction": 2675,
+            "variance": 20625,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2650,
+              "variance": 40000,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2700,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 174,
+            "threshold": 515,
+            "prediction": 3100,
+            "variance": 18000,
+            "sampleCount": 5,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2950,
+              "variance": 0,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 3200,
+              "variance": 5000,
+              "sampleCount": 3
+            }
+          }
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 4800,
+          "variance": 250000,
+          "sampleCount": 2
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 179,
+      "threshold": 2760,
+      "prediction": 2150.9375,
+      "variance": 3776183.49609375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 178,
+        "threshold": 1080,
+        "prediction": 1506.4285714285713,
+        "variance": 652615.8163265308,
+        "sampleCount": 28,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 183,
+          "threshold": 1170,
+          "prediction": 953.5294117647059,
+          "variance": 108811.07266435985,
+          "sampleCount": 17,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 186,
+            "threshold": 0.13,
+            "prediction": 663.3333333333334,
+            "variance": 15466.666666666666,
+            "sampleCount": 9,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 28,
+              "threshold": 0.5,
+              "prediction": 583.3333333333334,
+              "variance": 3255.555555555555,
+              "sampleCount": 6,
+              "left": {
+                "isLeaf": true,
+                "prediction": 550,
+                "variance": 8100,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 600,
+                "variance": 0,
+                "sampleCount": 4
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 823.3333333333334,
+              "variance": 1488.8888888888887,
+              "sampleCount": 3
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 166,
+            "threshold": 757.0796326794897,
+            "prediction": 1280,
+            "variance": 12500,
+            "sampleCount": 8,
+            "left": {
+              "isLeaf": true,
+              "prediction": 1200,
+              "variance": 1600,
+              "sampleCount": 5
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1413.3333333333333,
+              "variance": 2222.222222222222,
+              "sampleCount": 3
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 179,
+          "threshold": 1530,
+          "prediction": 2360.909090909091,
+          "variance": 290462.80991735536,
+          "sampleCount": 11,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 187,
+            "threshold": 202.5,
+            "prediction": 1824,
+            "variance": 6104,
+            "sampleCount": 5,
+            "left": {
+              "isLeaf": true,
+              "prediction": 1853.3333333333333,
+              "variance": 8022.222222222223,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1780,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 178,
+            "threshold": 1780,
+            "prediction": 2808.3333333333335,
+            "variance": 87013.88888888889,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2450,
+              "variance": 0,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 159,
+              "threshold": 37.5,
+              "prediction": 2987.5,
+              "variance": 34218.75,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 3125,
+                "variance": 30625,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 2850,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 179,
+        "threshold": 4725,
+        "prediction": 6662.5,
+        "variance": 2379218.75,
+        "sampleCount": 4,
+        "left": {
+          "isLeaf": true,
+          "prediction": 5125,
+          "variance": 30625,
+          "sampleCount": 2
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 8200,
+          "variance": 0,
+          "sampleCount": 2
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 186,
+      "threshold": 0.33499999999999996,
+      "prediction": 2114.6875,
+      "variance": 3915387.40234375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 179,
+        "threshold": 1080,
+        "prediction": 1397.037037037037,
+        "variance": 730909.7393689984,
+        "sampleCount": 27,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 181,
+          "threshold": 900,
+          "prediction": 897.3684210526316,
+          "variance": 117693.07479224376,
+          "sampleCount": 19,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 175,
+            "threshold": 300,
+            "prediction": 645.4545454545455,
+            "variance": 29497.52066115702,
+            "sampleCount": 11,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 98,
+              "threshold": 0.5,
+              "prediction": 468,
+              "variance": 5856,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 480,
+                "variance": 14400,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 460,
+                "variance": 0,
+                "sampleCount": 3
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 170,
+              "threshold": 1.5,
+              "prediction": 793.3333333333334,
+              "variance": 1088.888888888889,
+              "sampleCount": 6,
+              "left": {
+                "isLeaf": true,
+                "prediction": 770,
+                "variance": 0,
+                "sampleCount": 4
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 840,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 181,
+            "threshold": 1175,
+            "prediction": 1243.75,
+            "variance": 31723.4375,
+            "sampleCount": 8,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 1,
+              "threshold": 0.5,
+              "prediction": 1082.5,
+              "variance": 4568.75,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1015,
+                "variance": 25,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1150,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 2,
+              "threshold": 0.5,
+              "prediction": 1405,
+              "variance": 6875,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1330,
+                "variance": 2500,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1480,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 176,
+          "threshold": 95,
+          "prediction": 2583.75,
+          "variance": 186048.4375,
+          "sampleCount": 8,
+          "left": {
+            "isLeaf": true,
+            "prediction": 1885,
+            "variance": 9025,
+            "sampleCount": 2
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 179,
+            "threshold": 1797.5,
+            "prediction": 2816.6666666666665,
+            "variance": 28055.55555555555,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2683.3333333333335,
+              "variance": 555.5555555555557,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2950,
+              "variance": 20000,
+              "sampleCount": 3
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 185,
+        "threshold": 14,
+        "prediction": 5990,
+        "variance": 3312400,
+        "sampleCount": 5,
+        "left": {
+          "isLeaf": true,
+          "prediction": 4516.666666666667,
+          "variance": 93888.88888888889,
+          "sampleCount": 3
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 8200,
+          "variance": 0,
+          "sampleCount": 2
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 181,
+      "threshold": 2075,
+      "prediction": 1887.8125,
+      "variance": 1156592.08984375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 167,
+        "threshold": 4401.194520336698,
+        "prediction": 1132.1052631578948,
+        "variance": 165637.6731301939,
+        "sampleCount": 19,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 186,
+          "threshold": 0.1,
+          "prediction": 885.8333333333334,
+          "variance": 72340.97222222223,
+          "sampleCount": 12,
+          "left": {
+            "isLeaf": true,
+            "prediction": 453.3333333333333,
+            "variance": 17422.222222222223,
+            "sampleCount": 3
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 182,
+            "threshold": 870,
+            "prediction": 1030,
+            "variance": 7511.111111111111,
+            "sampleCount": 9,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 170,
+              "threshold": 1.5,
+              "prediction": 991.4285714285714,
+              "variance": 2897.9591836734694,
+              "sampleCount": 7,
+              "left": {
+                "isLeaf": true,
+                "prediction": 966.6666666666666,
+                "variance": 5688.88888888889,
+                "sampleCount": 3
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1010,
+                "variance": 0,
+                "sampleCount": 4
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1165,
+              "variance": 225,
+              "sampleCount": 2
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 192,
+          "threshold": 0.865,
+          "prediction": 1554.2857142857142,
+          "variance": 43367.34693877551,
+          "sampleCount": 7,
+          "left": {
+            "isLeaf": true,
+            "prediction": 1380,
+            "variance": 5000,
+            "sampleCount": 4
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 1786.6666666666667,
+            "variance": 22.222222222222218,
+            "sampleCount": 3
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 182,
+        "threshold": 2800,
+        "prediction": 2992.3076923076924,
+        "variance": 550325.4437869823,
+        "sampleCount": 13,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 183,
+          "threshold": 3350,
+          "prediction": 2740.909090909091,
+          "variance": 84008.26446280992,
+          "sampleCount": 11,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 174,
+            "threshold": 440,
+            "prediction": 2542.8571428571427,
+            "variance": 11734.693877551019,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2666.6666666666665,
+              "variance": 555.5555555555557,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2450,
+              "variance": 0,
+              "sampleCount": 4
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 185,
+            "threshold": 15,
+            "prediction": 3087.5,
+            "variance": 21718.75,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2950,
+              "variance": 0,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 3225,
+              "variance": 5625,
+              "sampleCount": 2
+            }
+          }
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 4375,
+          "variance": 855625,
+          "sampleCount": 2
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 186,
+      "threshold": 0.33499999999999996,
+      "prediction": 2247.8125,
+      "variance": 3552342.08984375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 179,
+        "threshold": 1270,
+        "prediction": 1652.857142857143,
+        "variance": 764048.9795918366,
+        "sampleCount": 28,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 176,
+          "threshold": 55,
+          "prediction": 1034.7058823529412,
+          "variance": 177554.32525951558,
+          "sampleCount": 17,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 148,
+            "threshold": 0.5,
+            "prediction": 621.25,
+            "variance": 27460.9375,
+            "sampleCount": 8,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 178,
+              "threshold": 500,
+              "prediction": 708.3333333333334,
+              "variance": 6280.555555555556,
+              "sampleCount": 6,
+              "left": {
+                "isLeaf": false,
+                "featureIndex": 193,
+                "threshold": 0.65,
+                "prediction": 660,
+                "variance": 1800,
+                "sampleCount": 4,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 620,
+                  "variance": 400,
+                  "sampleCount": 2
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 700,
+                  "variance": 0,
+                  "sampleCount": 2
+                }
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 805,
+                "variance": 1225,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 360,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 174,
+            "threshold": 230,
+            "prediction": 1402.2222222222222,
+            "variance": 23950.617283950618,
+            "sampleCount": 9,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 183,
+              "threshold": 1550,
+              "prediction": 1313.3333333333333,
+              "variance": 2222.222222222222,
+              "sampleCount": 6,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1280,
+                "variance": 0,
+                "sampleCount": 4
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1380,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1580,
+              "variance": 20000,
+              "sampleCount": 3
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 176,
+          "threshold": 95,
+          "prediction": 2608.181818181818,
+          "variance": 167269.4214876033,
+          "sampleCount": 11,
+          "left": {
+            "isLeaf": true,
+            "prediction": 1980,
+            "variance": 0,
+            "sampleCount": 3
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 181,
+            "threshold": 2725,
+            "prediction": 2843.75,
+            "variance": 26523.4375,
+            "sampleCount": 8,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2666.6666666666665,
+              "variance": 555.5555555555555,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 187,
+              "threshold": 247.5,
+              "prediction": 2950,
+              "variance": 12000,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 3016.6666666666665,
+                "variance": 8888.888888888889,
+                "sampleCount": 3
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 2850,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 126,
+        "threshold": 0.5,
+        "prediction": 6412.5,
+        "variance": 3247968.75,
+        "sampleCount": 4,
+        "left": {
+          "isLeaf": true,
+          "prediction": 4625,
+          "variance": 105625,
+          "sampleCount": 2
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 8200,
+          "variance": 0,
+          "sampleCount": 2
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 187,
+      "threshold": 267.5,
+      "prediction": 2086.875,
+      "variance": 4056765.234375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 175,
+        "threshold": 680,
+        "prediction": 1364.0740740740741,
+        "variance": 850987.1056241426,
+        "sampleCount": 27,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 182,
+          "threshold": 900,
+          "prediction": 785,
+          "variance": 107780.55555555556,
+          "sampleCount": 18,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 182,
+            "threshold": 515,
+            "prediction": 659.3333333333334,
+            "variance": 32806.22222222222,
+            "sampleCount": 15,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 43,
+              "threshold": 0.5,
+              "prediction": 473.3333333333333,
+              "variance": 9688.888888888889,
+              "sampleCount": 6,
+              "left": {
+                "isLeaf": true,
+                "prediction": 600,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": false,
+                "featureIndex": 148,
+                "threshold": 0.5,
+                "prediction": 410,
+                "variance": 2500,
+                "sampleCount": 4,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 460,
+                  "variance": 0,
+                  "sampleCount": 2
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 360,
+                  "variance": 0,
+                  "sampleCount": 2
+                }
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 176,
+              "threshold": 47.5,
+              "prediction": 783.3333333333334,
+              "variance": 9777.777777777777,
+              "sampleCount": 9,
+              "left": {
+                "isLeaf": false,
+                "featureIndex": 142,
+                "threshold": 0.5,
+                "prediction": 702,
+                "variance": 1696,
+                "sampleCount": 5,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 705,
+                  "variance": 4225,
+                  "sampleCount": 2
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 700,
+                  "variance": 0,
+                  "sampleCount": 3
+                }
+              },
+              "right": {
+                "isLeaf": false,
+                "featureIndex": 165,
+                "threshold": 0.5,
+                "prediction": 885,
+                "variance": 1275,
+                "sampleCount": 4,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 920,
+                  "variance": 0,
+                  "sampleCount": 2
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 850,
+                  "variance": 100,
+                  "sampleCount": 2
+                }
+              }
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 1413.3333333333333,
+            "variance": 8888.888888888889,
+            "sampleCount": 3
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 186,
+          "threshold": 0.235,
+          "prediction": 2522.222222222222,
+          "variance": 325439.5061728395,
+          "sampleCount": 9,
+          "left": {
+            "isLeaf": true,
+            "prediction": 1783.3333333333333,
+            "variance": 22.222222222222218,
+            "sampleCount": 3
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 179,
+            "threshold": 1842.5,
+            "prediction": 2891.6666666666665,
+            "variance": 78680.55555555556,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2666.6666666666665,
+              "variance": 555.5555555555555,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 3116.6666666666665,
+              "variance": 55555.555555555555,
+              "sampleCount": 3
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 167,
+        "threshold": 432,
+        "prediction": 5990,
+        "variance": 3312400,
+        "sampleCount": 5,
+        "left": {
+          "isLeaf": true,
+          "prediction": 8200,
+          "variance": 0,
+          "sampleCount": 2
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 4516.666666666667,
+          "variance": 93888.88888888889,
+          "sampleCount": 3
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 187,
+      "threshold": 200,
+      "prediction": 2634.375,
+      "variance": 2345105.859375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 172,
+        "threshold": 4.25,
+        "prediction": 1042.3076923076924,
+        "variance": 118494.67455621302,
+        "sampleCount": 13,
+        "left": {
+          "isLeaf": true,
+          "prediction": 360,
+          "variance": 0,
+          "sampleCount": 2
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 175,
+          "threshold": 570,
+          "prediction": 1166.3636363636363,
+          "variance": 40004.95867768594,
+          "sampleCount": 11,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 166,
+            "threshold": 76,
+            "prediction": 1030,
+            "variance": 10657.142857142857,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": true,
+              "prediction": 976,
+              "variance": 4624,
+              "sampleCount": 5
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1165,
+              "variance": 225,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 1405,
+            "variance": 1875,
+            "sampleCount": 4
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 183,
+        "threshold": 4500,
+        "prediction": 3723.684210526316,
+        "variance": 947728.531855956,
+        "sampleCount": 19,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 182,
+          "threshold": 2500,
+          "prediction": 3100,
+          "variance": 90384.61538461539,
+          "sampleCount": 13,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 183,
+            "threshold": 3150,
+            "prediction": 2687.5,
+            "variance": 31718.75,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2550,
+              "variance": 10000,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2825,
+              "variance": 15625,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 166,
+            "threshold": 29812.5,
+            "prediction": 3283.3333333333335,
+            "variance": 7222.222222222222,
+            "sampleCount": 9,
+            "left": {
+              "isLeaf": true,
+              "prediction": 3321.4285714285716,
+              "variance": 2755.1020408163267,
+              "sampleCount": 7
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 3150,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 164,
+          "threshold": 0.5,
+          "prediction": 5075,
+          "variance": 136458.33333333334,
+          "sampleCount": 6,
+          "left": {
+            "isLeaf": true,
+            "prediction": 5300,
+            "variance": 0,
+            "sampleCount": 4
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 4625,
+            "variance": 105625,
+            "sampleCount": 2
+          }
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 179,
+      "threshold": 1730,
+      "prediction": 2242.5,
+      "variance": 2045156.25,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 175,
+        "threshold": 570,
+        "prediction": 1268,
+        "variance": 235516,
+        "sampleCount": 20,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 158,
+          "threshold": 20.5,
+          "prediction": 869,
+          "variance": 48509,
+          "sampleCount": 10,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 175,
+            "threshold": 365,
+            "prediction": 768.5714285714286,
+            "variance": 33812.244897959186,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 184,
+              "threshold": 245,
+              "prediction": 668,
+              "variance": 1696,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 620,
+                "variance": 400,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 700,
+                "variance": 0,
+                "sampleCount": 3
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1020,
+              "variance": 25600,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 1103.3333333333333,
+            "variance": 4355.555555555556,
+            "sampleCount": 3
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 175,
+          "threshold": 800,
+          "prediction": 1667,
+          "variance": 104121,
+          "sampleCount": 10,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 168,
+            "threshold": 1725,
+            "prediction": 1530,
+            "variance": 22500,
+            "sampleCount": 8,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 168,
+              "threshold": 1450,
+              "prediction": 1446.6666666666667,
+              "variance": 2222.222222222222,
+              "sampleCount": 6,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1380,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1480,
+                "variance": 0,
+                "sampleCount": 4
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1780,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 2215,
+            "variance": 55225,
+            "sampleCount": 2
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 181,
+        "threshold": 3800,
+        "prediction": 3866.6666666666665,
+        "variance": 840555.5555555556,
+        "sampleCount": 12,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 174,
+          "threshold": 515,
+          "prediction": 3000,
+          "variance": 85000,
+          "sampleCount": 6,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 174,
+            "threshold": 450,
+            "prediction": 2812.5,
+            "variance": 19218.75,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2675,
+              "variance": 625,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2950,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 3375,
+            "variance": 5625,
+            "sampleCount": 2
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 184,
+          "threshold": 1600,
+          "prediction": 4733.333333333333,
+          "variance": 93888.88888888888,
+          "sampleCount": 6,
+          "left": {
+            "isLeaf": true,
+            "prediction": 4300,
+            "variance": 0,
+            "sampleCount": 2
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 4950,
+            "variance": 0,
+            "sampleCount": 4
+          }
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 182,
+      "threshold": 1775,
+      "prediction": 1811.875,
+      "variance": 1227483.984375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 166,
+        "threshold": 171.96902001294993,
+        "prediction": 1171.8181818181818,
+        "variance": 283751.2396694215,
+        "sampleCount": 22,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 177,
+          "threshold": 25,
+          "prediction": 620,
+          "variance": 51733.333333333336,
+          "sampleCount": 9,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 160,
+            "threshold": 2,
+            "prediction": 420,
+            "variance": 2400,
+            "sampleCount": 5,
+            "left": {
+              "isLeaf": true,
+              "prediction": 460,
+              "variance": 0,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 360,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 161,
+            "threshold": 10.25,
+            "prediction": 870,
+            "variance": 900,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 880,
+              "variance": 1600,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 860,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 182,
+          "threshold": 1300,
+          "prediction": 1553.8461538461538,
+          "variance": 87623.66863905326,
+          "sampleCount": 13,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 184,
+            "threshold": 475,
+            "prediction": 1300,
+            "variance": 15857.142857142857,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 176,
+              "threshold": 55,
+              "prediction": 1228,
+              "variance": 4056,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1150,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1280,
+                "variance": 0,
+                "sampleCount": 3
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1480,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 177,
+            "threshold": 47.5,
+            "prediction": 1850,
+            "variance": 8466.666666666666,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 161,
+              "threshold": 9,
+              "prediction": 1785,
+              "variance": 25,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1790,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1780,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1980,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 174,
+        "threshold": 850,
+        "prediction": 3220,
+        "variance": 419600,
+        "sampleCount": 10,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 178,
+          "threshold": 1885,
+          "prediction": 2975,
+          "variance": 83750,
+          "sampleCount": 8,
+          "left": {
+            "isLeaf": true,
+            "prediction": 2650,
+            "variance": 26666.666666666668,
+            "sampleCount": 3
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 183,
+            "threshold": 3750,
+            "prediction": 3170,
+            "variance": 16600,
+            "sampleCount": 5,
+            "left": {
+              "isLeaf": true,
+              "prediction": 3083.3333333333335,
+              "variance": 8888.888888888889,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 3300,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          }
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 4200,
+          "variance": 562500,
+          "sampleCount": 2
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 183,
+      "threshold": 3550,
+      "prediction": 2112.1875,
+      "variance": 2793385.83984375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 179,
+        "threshold": 1080,
+        "prediction": 1310,
+        "variance": 350716.6666666667,
+        "sampleCount": 24,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 184,
+          "threshold": 340,
+          "prediction": 1033.888888888889,
+          "variance": 112479.32098765433,
+          "sampleCount": 18,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 168,
+            "threshold": 90,
+            "prediction": 681.4285714285714,
+            "variance": 34869.387755102034,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": true,
+              "prediction": 410,
+              "variance": 2500,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 172,
+              "threshold": 5.5,
+              "prediction": 790,
+              "variance": 6560,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 705,
+                "variance": 4225,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 846.6666666666666,
+                "variance": 88.8888888888889,
+                "sampleCount": 3
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 183,
+            "threshold": 1575,
+            "prediction": 1258.1818181818182,
+            "variance": 32505.785123966947,
+            "sampleCount": 11,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 174,
+              "threshold": 155,
+              "prediction": 1131.4285714285713,
+              "variance": 6897.95918367347,
+              "sampleCount": 7,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1020,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1176,
+                "variance": 2704,
+                "sampleCount": 5
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1480,
+              "variance": 0,
+              "sampleCount": 4
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 175,
+          "threshold": 960,
+          "prediction": 2138.3333333333335,
+          "variance": 150580.55555555556,
+          "sampleCount": 6,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 192,
+            "threshold": 0.865,
+            "prediction": 1882.5,
+            "variance": 9518.75,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 1980,
+              "variance": 0,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1785,
+              "variance": 25,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 2650,
+            "variance": 40000,
+            "sampleCount": 2
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 184,
+        "threshold": 1600,
+        "prediction": 4518.75,
+        "variance": 2399335.9375,
+        "sampleCount": 8,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 193,
+          "threshold": 0.9099999999999999,
+          "prediction": 3775,
+          "variance": 285625,
+          "sampleCount": 6,
+          "left": {
+            "isLeaf": true,
+            "prediction": 3250,
+            "variance": 20000,
+            "sampleCount": 3
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 4300,
+            "variance": 0,
+            "sampleCount": 3
+          }
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 6750,
+          "variance": 2102500,
+          "sampleCount": 2
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 183,
+      "threshold": 2650,
+      "prediction": 2300.625,
+      "variance": 2529787.109375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 178,
+        "threshold": 737.5,
+        "prediction": 1065,
+        "variance": 142869.44444444444,
+        "sampleCount": 18,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 174,
+          "threshold": 105,
+          "prediction": 786,
+          "variance": 36644,
+          "sampleCount": 10,
+          "left": {
+            "isLeaf": true,
+            "prediction": 565,
+            "variance": 3675,
+            "sampleCount": 4
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 178,
+            "threshold": 672.5,
+            "prediction": 933.3333333333334,
+            "variance": 4355.555555555556,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 186,
+              "threshold": 0.14500000000000002,
+              "prediction": 890,
+              "variance": 900,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 920,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 860,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1020,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 158,
+          "threshold": 5,
+          "prediction": 1413.75,
+          "variance": 56723.4375,
+          "sampleCount": 8,
+          "left": {
+            "isLeaf": true,
+            "prediction": 1780,
+            "variance": 0,
+            "sampleCount": 2
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 175,
+            "threshold": 570,
+            "prediction": 1291.6666666666667,
+            "variance": 16013.88888888889,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 1170,
+              "variance": 200,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1413.3333333333333,
+              "variance": 2222.222222222222,
+              "sampleCount": 3
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 184,
+        "threshold": 1300,
+        "prediction": 3889.285714285714,
+        "variance": 1111849.489795918,
+        "sampleCount": 14,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 179,
+          "threshold": 2035,
+          "prediction": 2907.1428571428573,
+          "variance": 49591.83673469388,
+          "sampleCount": 7,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 146,
+            "threshold": 0.5,
+            "prediction": 2780,
+            "variance": 10600,
+            "sampleCount": 5,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2900,
+              "variance": 2500,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2700,
+              "variance": 0,
+              "sampleCount": 3
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 3225,
+            "variance": 5625,
+            "sampleCount": 2
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 164,
+          "threshold": 0.5,
+          "prediction": 4871.428571428572,
+          "variance": 244897.95918367346,
+          "sampleCount": 7,
+          "left": {
+            "isLeaf": true,
+            "prediction": 5300,
+            "variance": 0,
+            "sampleCount": 4
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 4300,
+            "variance": 0,
+            "sampleCount": 3
+          }
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 176,
+      "threshold": 95,
+      "prediction": 2210.625,
+      "variance": 2005224.609375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 181,
+        "threshold": 975,
+        "prediction": 1138.3333333333333,
+        "variance": 211102.77777777772,
+        "sampleCount": 18,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 181,
+          "threshold": 630,
+          "prediction": 645.7142857142857,
+          "variance": 29681.63265306122,
+          "sampleCount": 7,
+          "left": {
+            "isLeaf": true,
+            "prediction": 473.3333333333333,
+            "variance": 9688.888888888889,
+            "sampleCount": 3
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 161,
+            "threshold": 3.25,
+            "prediction": 775,
+            "variance": 5675,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 700,
+              "variance": 0,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 850,
+              "variance": 100,
+              "sampleCount": 2
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 174,
+          "threshold": 280,
+          "prediction": 1451.8181818181818,
+          "variance": 73851.23966942147,
+          "sampleCount": 11,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 178,
+            "threshold": 902.5,
+            "prediction": 1301.25,
+            "variance": 15410.9375,
+            "sampleCount": 8,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 183,
+              "threshold": 1400,
+              "prediction": 1214,
+              "variance": 3024,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1170,
+                "variance": 200,
+                "sampleCount": 3
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1280,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1446.6666666666667,
+              "variance": 2222.222222222222,
+              "sampleCount": 3
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 1853.3333333333333,
+            "variance": 8022.222222222222,
+            "sampleCount": 3
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 177,
+        "threshold": 85,
+        "prediction": 3589.285714285714,
+        "variance": 932920.9183673469,
+        "sampleCount": 14,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 168,
+          "threshold": 114,
+          "prediction": 2905.5555555555557,
+          "variance": 104691.35802469135,
+          "sampleCount": 9,
+          "left": {
+            "isLeaf": true,
+            "prediction": 3450,
+            "variance": 0,
+            "sampleCount": 2
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 184,
+            "threshold": 1050,
+            "prediction": 2750,
+            "variance": 25714.285714285714,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2583.3333333333335,
+              "variance": 8888.888888888889,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2875,
+              "variance": 1875,
+              "sampleCount": 4
+            }
+          }
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 4820,
+          "variance": 67600,
+          "sampleCount": 5
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 159,
+      "threshold": 55,
+      "prediction": 2105.625,
+      "variance": 3734718.359375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 183,
+        "threshold": 1775,
+        "prediction": 1575.1724137931035,
+        "variance": 926349.1082045182,
+        "sampleCount": 29,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 182,
+          "threshold": 735,
+          "prediction": 855.2941176470588,
+          "variance": 88119.0311418685,
+          "sampleCount": 17,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 175,
+            "threshold": 275,
+            "prediction": 646,
+            "variance": 28004,
+            "sampleCount": 10,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 167,
+              "threshold": 63,
+              "prediction": 470,
+              "variance": 7300,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 460,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 480,
+                "variance": 14400,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 174,
+              "threshold": 125,
+              "prediction": 763.3333333333334,
+              "variance": 7388.88888888889,
+              "sampleCount": 6,
+              "left": {
+                "isLeaf": true,
+                "prediction": 680,
+                "variance": 800,
+                "sampleCount": 3
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 846.6666666666666,
+                "variance": 88.8888888888889,
+                "sampleCount": 3
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 187,
+            "threshold": 170,
+            "prediction": 1154.2857142857142,
+            "variance": 22024.489795918365,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": true,
+              "prediction": 986.6666666666666,
+              "variance": 2222.222222222222,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1280,
+              "variance": 0,
+              "sampleCount": 4
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 183,
+          "threshold": 3100,
+          "prediction": 2595,
+          "variance": 339641.6666666667,
+          "sampleCount": 12,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 193,
+            "threshold": 0.7849999999999999,
+            "prediction": 2073.3333333333335,
+            "variance": 76955.55555555555,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 158,
+              "threshold": 19,
+              "prediction": 1885,
+              "variance": 9025,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1980,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1790,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2450,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 159,
+            "threshold": 25,
+            "prediction": 3116.6666666666665,
+            "variance": 58055.55555555557,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 3350,
+              "variance": 5000,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2883.3333333333335,
+              "variance": 2222.222222222222,
+              "sampleCount": 3
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": true,
+        "prediction": 7233.333333333333,
+        "variance": 1868888.888888889,
+        "sampleCount": 3
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 188,
+      "threshold": 0.79,
+      "prediction": 2205.625,
+      "variance": 2923730.859375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 172,
+        "threshold": 7.5,
+        "prediction": 957.2222222222222,
+        "variance": 106497.83950617284,
+        "sampleCount": 18,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 174,
+          "threshold": 125,
+          "prediction": 822.1428571428571,
+          "variance": 25531.122448979593,
+          "sampleCount": 14,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 177,
+            "threshold": 22.5,
+            "prediction": 600,
+            "variance": 7800,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 530,
+              "variance": 4900,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 670,
+              "variance": 900,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 184,
+            "threshold": 330,
+            "prediction": 911,
+            "variance": 4989,
+            "sampleCount": 10,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 159,
+              "threshold": 8.5,
+              "prediction": 868.5714285714286,
+              "variance": 1126.5306122448978,
+              "sampleCount": 7,
+              "left": {
+                "isLeaf": false,
+                "featureIndex": 168,
+                "threshold": 660,
+                "prediction": 848,
+                "variance": 96,
+                "sampleCount": 5,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 840,
+                  "variance": 0,
+                  "sampleCount": 3
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 860,
+                  "variance": 0,
+                  "sampleCount": 2
+                }
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 920,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1010,
+              "variance": 0,
+              "sampleCount": 3
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 168,
+          "threshold": 710,
+          "prediction": 1430,
+          "variance": 102500,
+          "sampleCount": 4,
+          "left": {
+            "isLeaf": true,
+            "prediction": 1230,
+            "variance": 2500,
+            "sampleCount": 2
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 1630,
+            "variance": 122500,
+            "sampleCount": 2
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 182,
+        "threshold": 3800,
+        "prediction": 3810.714285714286,
+        "variance": 1965778.061224489,
+        "sampleCount": 14,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 166,
+          "threshold": 2125,
+          "prediction": 3204.5454545454545,
+          "variance": 147024.79338842977,
+          "sampleCount": 11,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 172,
+            "threshold": 21,
+            "prediction": 3071.4285714285716,
+            "variance": 40612.24489795918,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 102,
+              "threshold": 0.5,
+              "prediction": 2900,
+              "variance": 2500,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 2950,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 2850,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 3300,
+              "variance": 0,
+              "sampleCount": 3
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 3437.5,
+            "variance": 247968.75,
+            "sampleCount": 4
+          }
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 6033.333333333333,
+          "variance": 2347222.2222222225,
+          "sampleCount": 3
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 187,
+      "threshold": 270,
+      "prediction": 2625.9375,
+      "variance": 4508086.62109375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 177,
+        "threshold": 40,
+        "prediction": 1605.4166666666667,
+        "variance": 1100608.1597222222,
+        "sampleCount": 24,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 183,
+          "threshold": 840,
+          "prediction": 764.2857142857143,
+          "variance": 72538.77551020408,
+          "sampleCount": 14,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 186,
+            "threshold": 0.07500000000000001,
+            "prediction": 428,
+            "variance": 8896,
+            "sampleCount": 5,
+            "left": {
+              "isLeaf": true,
+              "prediction": 360,
+              "variance": 0,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 530,
+              "variance": 4900,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 183,
+            "threshold": 1115,
+            "prediction": 951.1111111111111,
+            "variance": 10165.432098765432,
+            "sampleCount": 9,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 167,
+              "threshold": 373.5,
+              "prediction": 872,
+              "variance": 1536,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 840,
+                "variance": 0,
+                "sampleCount": 3
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 920,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 19,
+              "threshold": 0.5,
+              "prediction": 1050,
+              "variance": 3350,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1080,
+                "variance": 4900,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1020,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 177,
+          "threshold": 67.5,
+          "prediction": 2783,
+          "variance": 162701,
+          "sampleCount": 10,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 167,
+            "threshold": 4600.663555421825,
+            "prediction": 2456,
+            "variance": 69144,
+            "sampleCount": 5,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2293.3333333333335,
+              "variance": 49088.88888888888,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2700,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 174,
+            "threshold": 615,
+            "prediction": 3110,
+            "variance": 42400,
+            "sampleCount": 5,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2900,
+              "variance": 2500,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 3250,
+              "variance": 20000,
+              "sampleCount": 3
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 186,
+        "threshold": 0.39,
+        "prediction": 5687.5,
+        "variance": 2232968.75,
+        "sampleCount": 8,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 174,
+          "threshold": 665,
+          "prediction": 4850,
+          "variance": 171666.66666666666,
+          "sampleCount": 6,
+          "left": {
+            "isLeaf": true,
+            "prediction": 4300,
+            "variance": 0,
+            "sampleCount": 2
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 185,
+            "threshold": 16.5,
+            "prediction": 5125,
+            "variance": 30625,
+            "sampleCount": 4,
+            "left": {
+              "isLeaf": true,
+              "prediction": 4950,
+              "variance": 0,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 5300,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          }
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 8200,
+          "variance": 0,
+          "sampleCount": 2
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 181,
+      "threshold": 3800,
+      "prediction": 2227.5,
+      "variance": 2735025,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 177,
+        "threshold": 55,
+        "prediction": 1733.2142857142858,
+        "variance": 852200.3826530613,
+        "sampleCount": 28,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 182,
+          "threshold": 1015,
+          "prediction": 1162.1052631578948,
+          "variance": 201985.04155124654,
+          "sampleCount": 19,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 174,
+            "threshold": 105,
+            "prediction": 830,
+            "variance": 48563.63636363636,
+            "sampleCount": 11,
+            "left": {
+              "isLeaf": true,
+              "prediction": 520,
+              "variance": 12800,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 182,
+              "threshold": 785,
+              "prediction": 946.25,
+              "variance": 12423.4375,
+              "sampleCount": 8,
+              "left": {
+                "isLeaf": false,
+                "featureIndex": 166,
+                "threshold": 74.5,
+                "prediction": 872,
+                "variance": 1536,
+                "sampleCount": 5,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 840,
+                  "variance": 0,
+                  "sampleCount": 3
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 920,
+                  "variance": 0,
+                  "sampleCount": 2
+                }
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1070,
+                "variance": 6066.666666666667,
+                "sampleCount": 3
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 179,
+            "threshold": 1080,
+            "prediction": 1618.75,
+            "variance": 52760.9375,
+            "sampleCount": 8,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 2,
+              "threshold": 0.5,
+              "prediction": 1405,
+              "variance": 6875,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1330,
+                "variance": 2500,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1480,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 188,
+              "threshold": 0.8,
+              "prediction": 1832.5,
+              "variance": 7268.75,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1885,
+                "variance": 9025,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1780,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 179,
+          "threshold": 2035,
+          "prediction": 2938.8888888888887,
+          "variance": 82654.32098765433,
+          "sampleCount": 9,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 178,
+            "threshold": 1842.5,
+            "prediction": 2758.3333333333335,
+            "variance": 18680.555555555555,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2662.5,
+              "variance": 468.75,
+              "sampleCount": 4
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2950,
+              "variance": 0,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 3300,
+            "variance": 15000,
+            "sampleCount": 3
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 178,
+        "threshold": 3605,
+        "prediction": 5687.5,
+        "variance": 2232968.75,
+        "sampleCount": 4,
+        "left": {
+          "isLeaf": true,
+          "prediction": 4625,
+          "variance": 105625,
+          "sampleCount": 2
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 6750,
+          "variance": 2102500,
+          "sampleCount": 2
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 174,
+      "threshold": 250,
+      "prediction": 1782.1875,
+      "variance": 1390048.33984375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 181,
+        "threshold": 1065,
+        "prediction": 991.9047619047619,
+        "variance": 66110.6575963719,
+        "sampleCount": 21,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 172,
+          "threshold": 5.25,
+          "prediction": 850,
+          "variance": 17186.666666666668,
+          "sampleCount": 15,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 172,
+            "threshold": 4.5,
+            "prediction": 696,
+            "variance": 4664,
+            "sampleCount": 5,
+            "left": {
+              "isLeaf": true,
+              "prediction": 620,
+              "variance": 400,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 746.6666666666666,
+              "variance": 1088.888888888889,
+              "sampleCount": 3
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 178,
+            "threshold": 672.5,
+            "prediction": 927,
+            "variance": 5661,
+            "sampleCount": 10,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 186,
+              "threshold": 0.14500000000000002,
+              "prediction": 870,
+              "variance": 1300,
+              "sampleCount": 6,
+              "left": {
+                "isLeaf": true,
+                "prediction": 920,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 845,
+                "variance": 75,
+                "sampleCount": 4
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1012.5,
+              "variance": 18.75,
+              "sampleCount": 4
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 158,
+          "threshold": 22.5,
+          "prediction": 1346.6666666666667,
+          "variance": 12222.22222222222,
+          "sampleCount": 6,
+          "left": {
+            "isLeaf": true,
+            "prediction": 1246.6666666666667,
+            "variance": 2222.222222222222,
+            "sampleCount": 3
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 1446.6666666666667,
+            "variance": 2222.222222222222,
+            "sampleCount": 3
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 178,
+        "threshold": 2485,
+        "prediction": 3290.909090909091,
+        "variance": 449008.26446280984,
+        "sampleCount": 11,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 179,
+          "threshold": 2035,
+          "prediction": 2994.4444444444443,
+          "variance": 41913.580246913574,
+          "sampleCount": 9,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 172,
+            "threshold": 17,
+            "prediction": 2866.6666666666665,
+            "variance": 11388.888888888889,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2950,
+              "variance": 0,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2783.3333333333335,
+              "variance": 8888.888888888889,
+              "sampleCount": 3
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 3250,
+            "variance": 5000,
+            "sampleCount": 3
+          }
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 4625,
+          "variance": 105625,
+          "sampleCount": 2
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 175,
+      "threshold": 985,
+      "prediction": 1863.75,
+      "variance": 2177854.6875,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 175,
+        "threshold": 510,
+        "prediction": 1021.304347826087,
+        "variance": 185324.38563327034,
+        "sampleCount": 23,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 183,
+          "threshold": 900,
+          "prediction": 756,
+          "variance": 53530.666666666664,
+          "sampleCount": 15,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 174,
+            "threshold": 62.5,
+            "prediction": 534.2857142857143,
+            "variance": 15167.346938775512,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": true,
+              "prediction": 435,
+              "variance": 1875,
+              "sampleCount": 4
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 666.6666666666666,
+              "variance": 2222.222222222222,
+              "sampleCount": 3
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 181,
+            "threshold": 915,
+            "prediction": 950,
+            "variance": 6450,
+            "sampleCount": 8,
+            "left": {
+              "isLeaf": true,
+              "prediction": 846.6666666666666,
+              "variance": 88.8888888888889,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1012,
+              "variance": 16,
+              "sampleCount": 5
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 178,
+          "threshold": 1080,
+          "prediction": 1518.75,
+          "variance": 53010.9375,
+          "sampleCount": 8,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 20,
+            "threshold": 0.5,
+            "prediction": 1396.6666666666667,
+            "variance": 8055.555555555556,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 1313.3333333333333,
+              "variance": 2222.222222222222,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1480,
+              "variance": 0,
+              "sampleCount": 3
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 1885,
+            "variance": 9025,
+            "sampleCount": 2
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 183,
+        "threshold": 4500,
+        "prediction": 4016.6666666666665,
+        "variance": 821111.1111111111,
+        "sampleCount": 9,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 186,
+          "threshold": 0.27,
+          "prediction": 3087.5,
+          "variance": 96718.75,
+          "sampleCount": 4,
+          "left": {
+            "isLeaf": true,
+            "prediction": 2800,
+            "variance": 22500,
+            "sampleCount": 2
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 3375,
+            "variance": 5625,
+            "sampleCount": 2
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 103,
+          "threshold": 0.5,
+          "prediction": 4760,
+          "variance": 157400,
+          "sampleCount": 5,
+          "left": {
+            "isLeaf": true,
+            "prediction": 5066.666666666667,
+            "variance": 27222.22222222222,
+            "sampleCount": 3
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 4300,
+            "variance": 0,
+            "sampleCount": 2
+          }
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 172,
+      "threshold": 26,
+      "prediction": 2400,
+      "variance": 2962518.75,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 187,
+        "threshold": 215,
+        "prediction": 1723.076923076923,
+        "variance": 792759.7633136095,
+        "sampleCount": 26,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 172,
+          "threshold": 7.5,
+          "prediction": 1194.4444444444443,
+          "variance": 193891.35802469135,
+          "sampleCount": 18,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 186,
+            "threshold": 0.13,
+            "prediction": 676.6666666666666,
+            "variance": 55122.22222222222,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 184,
+              "threshold": 210,
+              "prediction": 530,
+              "variance": 16900,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 410,
+                "variance": 2500,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 650,
+                "variance": 2500,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 970,
+              "variance": 2500,
+              "sampleCount": 2
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 182,
+            "threshold": 1300,
+            "prediction": 1453.3333333333333,
+            "variance": 62205.555555555555,
+            "sampleCount": 12,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 182,
+              "threshold": 1075,
+              "prediction": 1288.75,
+              "variance": 12035.9375,
+              "sampleCount": 8,
+              "left": {
+                "isLeaf": false,
+                "featureIndex": 177,
+                "threshold": 37.5,
+                "prediction": 1214,
+                "variance": 3024,
+                "sampleCount": 5,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 1170,
+                  "variance": 200,
+                  "sampleCount": 3
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 1280,
+                  "variance": 0,
+                  "sampleCount": 2
+                }
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1413.3333333333333,
+                "variance": 2222.222222222222,
+                "sampleCount": 3
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1782.5,
+              "variance": 18.75,
+              "sampleCount": 4
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 181,
+          "threshold": 3050,
+          "prediction": 2912.5,
+          "variance": 96718.75,
+          "sampleCount": 8,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 184,
+            "threshold": 1050,
+            "prediction": 2758.3333333333335,
+            "variance": 32013.888888888887,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 2600,
+              "variance": 11666.666666666666,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2916.6666666666665,
+              "variance": 2222.222222222222,
+              "sampleCount": 3
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 3375,
+            "variance": 5625,
+            "sampleCount": 2
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 158,
+        "threshold": 137.5,
+        "prediction": 5333.333333333333,
+        "variance": 1774722.2222222222,
+        "sampleCount": 6,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 178,
+          "threshold": 3085,
+          "prediction": 4625,
+          "variance": 105625,
+          "sampleCount": 4,
+          "left": {
+            "isLeaf": true,
+            "prediction": 4300,
+            "variance": 0,
+            "sampleCount": 2
+          },
+          "right": {
+            "isLeaf": true,
+            "prediction": 4950,
+            "variance": 0,
+            "sampleCount": 2
+          }
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 6750,
+          "variance": 2102500,
+          "sampleCount": 2
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 175,
+      "threshold": 1800,
+      "prediction": 2699.375,
+      "variance": 4135355.859375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 181,
+        "threshold": 2175,
+        "prediction": 1889.6153846153845,
+        "variance": 1131311.3905325443,
+        "sampleCount": 26,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 181,
+          "threshold": 935,
+          "prediction": 1042,
+          "variance": 174296,
+          "sampleCount": 15,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 175,
+            "threshold": 260,
+            "prediction": 616.6666666666666,
+            "variance": 29922.222222222223,
+            "sampleCount": 6,
+            "left": {
+              "isLeaf": true,
+              "prediction": 460,
+              "variance": 0,
+              "sampleCount": 3
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 773.3333333333334,
+              "variance": 10755.555555555557,
+              "sampleCount": 3
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 174,
+            "threshold": 230,
+            "prediction": 1325.5555555555557,
+            "variance": 69535.80246913579,
+            "sampleCount": 9,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 182,
+              "threshold": 1015,
+              "prediction": 1210,
+              "variance": 11457.142857142857,
+              "sampleCount": 7,
+              "left": {
+                "isLeaf": false,
+                "featureIndex": 158,
+                "threshold": 20,
+                "prediction": 1132.5,
+                "variance": 4368.75,
+                "sampleCount": 4,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 1180,
+                  "variance": 0,
+                  "sampleCount": 2
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 1085,
+                  "variance": 4225,
+                  "sampleCount": 2
+                }
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1313.3333333333333,
+                "variance": 2222.222222222222,
+                "sampleCount": 3
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1730,
+              "variance": 62500,
+              "sampleCount": 2
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 181,
+          "threshold": 2775,
+          "prediction": 3045.4545454545455,
+          "variance": 120661.15702479341,
+          "sampleCount": 11,
+          "left": {
+            "isLeaf": true,
+            "prediction": 2533.3333333333335,
+            "variance": 13888.888888888889,
+            "sampleCount": 3
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 182,
+            "threshold": 2650,
+            "prediction": 3237.5,
+            "variance": 25468.75,
+            "sampleCount": 8,
+            "left": {
+              "isLeaf": true,
+              "prediction": 3100,
+              "variance": 7500,
+              "sampleCount": 4
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 192,
+              "threshold": 0.935,
+              "prediction": 3375,
+              "variance": 5625,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 3300,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 3450,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "featureIndex": 177,
+        "threshold": 110,
+        "prediction": 6208.333333333333,
+        "variance": 1998680.5555555557,
+        "sampleCount": 6,
+        "left": {
+          "isLeaf": true,
+          "prediction": 5212.5,
+          "variance": 22968.75,
+          "sampleCount": 4
+        },
+        "right": {
+          "isLeaf": true,
+          "prediction": 8200,
+          "variance": 0,
+          "sampleCount": 2
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 178,
+      "threshold": 2370,
+      "prediction": 1839.6875,
+      "variance": 2632278.02734375,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 177,
+        "threshold": 42.5,
+        "prediction": 1416.2068965517242,
+        "variance": 708678.7158145065,
+        "sampleCount": 29,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 181,
+          "threshold": 915,
+          "prediction": 898,
+          "variance": 90046,
+          "sampleCount": 20,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 174,
+            "threshold": 70,
+            "prediction": 700,
+            "variance": 25000,
+            "sampleCount": 12,
+            "left": {
+              "isLeaf": true,
+              "prediction": 410,
+              "variance": 2500,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": false,
+              "featureIndex": 174,
+              "threshold": 125,
+              "prediction": 758,
+              "variance": 9316,
+              "sampleCount": 10,
+              "left": {
+                "isLeaf": false,
+                "featureIndex": 172,
+                "threshold": 4.5,
+                "prediction": 664,
+                "variance": 864,
+                "sampleCount": 5,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 640,
+                  "variance": 0,
+                  "sampleCount": 3
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 700,
+                  "variance": 0,
+                  "sampleCount": 2
+                }
+              },
+              "right": {
+                "isLeaf": false,
+                "featureIndex": 140,
+                "threshold": 0.5,
+                "prediction": 852,
+                "variance": 96,
+                "sampleCount": 5,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 860,
+                  "variance": 0,
+                  "sampleCount": 3
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 840,
+                  "variance": 0,
+                  "sampleCount": 2
+                }
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 181,
+            "threshold": 1225,
+            "prediction": 1195,
+            "variance": 40600,
+            "sampleCount": 8,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 145,
+              "threshold": 0.5,
+              "prediction": 1044,
+              "variance": 2824,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1080,
+                "variance": 4900,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1020,
+                "variance": 0,
+                "sampleCount": 3
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1446.6666666666667,
+              "variance": 2222.222222222222,
+              "sampleCount": 3
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 181,
+          "threshold": 2175,
+          "prediction": 2567.777777777778,
+          "variance": 160550.61728395065,
+          "sampleCount": 9,
+          "left": {
+            "isLeaf": true,
+            "prediction": 1880,
+            "variance": 10000,
+            "sampleCount": 2
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 2,
+            "threshold": 0.5,
+            "prediction": 2764.285714285714,
+            "variance": 29795.918367346934,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 186,
+              "threshold": 0.29000000000000004,
+              "prediction": 2900,
+              "variance": 2500,
+              "sampleCount": 4,
+              "left": {
+                "isLeaf": true,
+                "prediction": 2950,
+                "variance": 0,
+                "sampleCount": 2
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 2850,
+                "variance": 0,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 2583.3333333333335,
+              "variance": 8888.888888888889,
+              "sampleCount": 3
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": true,
+        "prediction": 5933.333333333333,
+        "variance": 2735555.5555555555,
+        "sampleCount": 3
+      }
+    },
+    {
+      "isLeaf": false,
+      "featureIndex": 181,
+      "threshold": 4500,
+      "prediction": 2581.25,
+      "variance": 4422692.1875,
+      "sampleCount": 32,
+      "left": {
+        "isLeaf": false,
+        "featureIndex": 177,
+        "threshold": 55,
+        "prediction": 1894.642857142857,
+        "variance": 1000146.301020408,
+        "sampleCount": 28,
+        "left": {
+          "isLeaf": false,
+          "featureIndex": 178,
+          "threshold": 825,
+          "prediction": 1155.8823529411766,
+          "variance": 114518.33910034604,
+          "sampleCount": 17,
+          "left": {
+            "isLeaf": false,
+            "featureIndex": 165,
+            "threshold": 0.5,
+            "prediction": 938,
+            "variance": 47896,
+            "sampleCount": 10,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 172,
+              "threshold": 7.5,
+              "prediction": 1045.7142857142858,
+              "variance": 6853.061224489796,
+              "sampleCount": 7,
+              "left": {
+                "isLeaf": false,
+                "featureIndex": 104,
+                "threshold": 0.5,
+                "prediction": 998,
+                "variance": 1536,
+                "sampleCount": 5,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": 965,
+                  "variance": 2025,
+                  "sampleCount": 2
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": 1020,
+                  "variance": 0,
+                  "sampleCount": 3
+                }
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1165,
+                "variance": 225,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 686.6666666666666,
+              "variance": 53422.22222222222,
+              "sampleCount": 3
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 175,
+            "threshold": 680,
+            "prediction": 1467.142857142857,
+            "variance": 44991.83673469388,
+            "sampleCount": 7,
+            "left": {
+              "isLeaf": false,
+              "featureIndex": 184,
+              "threshold": 475,
+              "prediction": 1340,
+              "variance": 6400,
+              "sampleCount": 5,
+              "left": {
+                "isLeaf": true,
+                "prediction": 1280,
+                "variance": 0,
+                "sampleCount": 3
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": 1430,
+                "variance": 2500,
+                "sampleCount": 2
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 1785,
+              "variance": 25,
+              "sampleCount": 2
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "featureIndex": 177,
+          "threshold": 67.5,
+          "prediction": 3036.3636363636365,
+          "variance": 221859.50413223144,
+          "sampleCount": 11,
+          "left": {
+            "isLeaf": true,
+            "prediction": 2700,
+            "variance": 0,
+            "sampleCount": 6
+          },
+          "right": {
+            "isLeaf": false,
+            "featureIndex": 192,
+            "threshold": 0.9,
+            "prediction": 3440,
+            "variance": 189400,
+            "sampleCount": 5,
+            "left": {
+              "isLeaf": true,
+              "prediction": 3150,
+              "variance": 0,
+              "sampleCount": 2
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": 3633.3333333333335,
+              "variance": 222222.22222222225,
+              "sampleCount": 3
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": true,
+        "prediction": 7387.5,
+        "variance": 1980468.75,
+        "sampleCount": 4
+      }
+    }
+  ]
+}

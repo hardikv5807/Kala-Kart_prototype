@@ -26,6 +26,7 @@ import { VoiceCatalogScreen } from "./components/screens/VoiceCatalogScreen";
 import { PricingAssistantScreen } from "./components/screens/PricingAssistantScreen";
 import { MarketplaceListingScreen } from "./components/screens/MarketplaceListingScreen";
 import { CodeInspectorModal } from "./components/modals/CodeInspectorModal";
+import { KalaKartLogo } from "./components/common/KalaKartLogo";
 import {
   Sparkles,
   Code2,
@@ -165,9 +166,11 @@ export default function App() {
       {/* Top Application Header with Kala-Kart Branding & Controls */}
       <header className="bg-[#0F172A] border-b border-slate-800 px-4 py-2.5 sticky top-0 z-40 flex items-center justify-between shadow-md">
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#EA580C] to-amber-500 flex items-center justify-center text-white shadow-md shadow-orange-900/30">
-            <Sparkles className="w-4 h-4" />
-          </div>
+          <KalaKartLogo
+            size="md"
+            className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl shadow-md border border-slate-700/80 bg-[#FAF6ED] p-0.5"
+            alt="Kala-Kart Official Logo"
+          />
           <div>
             <div className="flex items-center gap-2">
               <h1 className="font-extrabold text-sm sm:text-base text-white tracking-tight">
