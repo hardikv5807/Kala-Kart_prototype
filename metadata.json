@@ -1,0 +1,7 @@
+{
+  "name": "Kala-Kart",
+  "description": "Ultra-modern, minimalist mobile platform empowering traditional artisans and weavers with AI-powered studio imaging, voice-to-cataloging, smart pricing, and multi-channel marketplace syndication.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
